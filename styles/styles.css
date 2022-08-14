@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin: 20px 20px 20px 20px;
+    background-color: silver;
+   }
+.header {margin:0;
+        font-size:3em;
+    }
+h2 {background-color:white;
+    border-top:5px solid black ;
+    border-bottom:5px solid black ;}
+.menu {border-top:5px solid black ;
+    border-bottom:5px solid black ;
+    background-color: white;}
+.apple {font-size:2em;
+        font-weight: bolder;
+        color:black;
+        background-color:#E9DAC1;
+        border:0px 0px 3px 0px; solid black;
+    }
+h3{color:#7F5283; background-color:silver;
+}
+li{font-size:150%;
+   font-weight:bolder;
+}
+.link {background-color: black;
+       float: right; }
+.footer {color : white;}
