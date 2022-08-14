@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin: 20px 20px 20px 20px;
+    background-color: silver;
+    background-image: url(images/hb.jpg);
+    background-size: 100px 100px; 
+    background-position: 90% 90%;}
+a:link{color:black;}
+a:visited{color:black;}
+a:hover{color:red;}   
+.header {font-size:3em;
+        font-weight:bolder}
+h2 {background-color:white;
+    border-bottom:3px solid black ;}
+.content {background-color: white;
+        border:5px black;
+        width:100%;
+        height:100px;
+        font-size:2em;}
+.apple {font-size:20px;
+        font-weight: bolder;
+        background-color:#E9DAC1;
+        border-bottom:3px solid black;
+        float: left;
+        width:100%;
+    }
+h3{color:#7F5283; background-color:silver;
+}
+li{font-size:150%;
+   font-weight:bolder;
+}
+.link {max-width:100%; 
+       color:white; 
+       float: left; }
+.footer {color : white;
+        float: center;}
