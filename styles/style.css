@@ -11,7 +11,3 @@ h3{color:#7F5283; background-color:silver;
 li{font-size:150%;
    font-weight:bolder;
 }
-@font-face {font-family: 'PCB'; src: url('font/pyeongChang-bold.ttf') format('ttf')}
-@font-face {font-family: 'PCR'; src: url('font/pyeongChang-regulsr.ttf')} format('ttf')}
-
-.HB {font-family: PCB;}
