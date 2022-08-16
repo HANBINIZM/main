@@ -1,15 +1,71 @@
 @charset "utf-8";
 /* CSS Document */
-body{background: #C1EFFF;
-    margin-top: 20px;
-    margin-left: 20px;
-   }
-h2{color:#B9005B; background-color:#E9DAC1;
+body{margin: 20px 20px 20px 20px;
+    background-color: silver;
+    background-image: url(images/hb.png);
+    background-size: 100px 100px; 
+    background-position: 90% 90%;}
+a:link{color:black;}
+a:visited{color:black;}
+a:hover{color:red;}   
+.header {font-size:50px;
+        font-weight:bolder;
+        background-color:gold;
+        text-align:center;
+        float:left;
+        display:block;}
+h2 {background-color:white;
+    border-bottom:3px solid black ;}
+.content {background-color:gray;
+          height:200px;
+          font-size:2em;
+          padding:10px;
+          display:block;}
+.apple {width:120px;
+        font-size:150%;
+        font-weight: bolder;
+        background-color:white;
+        float: right;
+        padding:15px;
+        text-align:center;
+        text-decoration-line:none;
 }
+.samsung {width:120px;
+        font-size:150%;
+        font-weight: bolder;
+        background-color:aqua;
+        float: right;
+        padding:15px;
+        text-align:center;
+        text-decoration-line:none;
+}
+.lg {width:120px;
+    font-size:150%;
+    font-weight: bolder;
+    background-color:#F675A8;
+    float: right;
+    padding:15px;
+    text-align:center;
+    text-decoration-line:none;
+}
+.content{display:block;
+        width:100%;
+        background-color:white;
+        font-size:2em;}
 h3{color:#7F5283; background-color:silver;
 }
 li{font-size:150%;
    font-weight:bolder;
 }
-.link {float: right; }
-div {color: silver ; }
+td{max-width:30%;
+   height:100px;     
+   border-color:red;
+   padding:10px;
+   background-color:blue;
+   text-align:center;
+   color:white;}
+.link {max-width:100%; 
+       color:white; 
+       float: left; }
+.footer {color : white;
+        text-align: center;}
