@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>220817</title>
+    <style>
+        table {border:5px #000 dotted;
+               width:95%;
+               height:200px;
+               font-size:2em;
+               font-weight:bolder;              
+               border-collapse:collapse;
+               margin: 10px 10px 10px 10px;
+             }
+        .c2 {background-color: #00ffff;
+             border-style:double;
+            }
+        thead {background-color:#ffff007e;}
+        tbody {text-align:center;
+              width:200px;}
+        tfoot {background-color:green;}
+        td {border:black 5px solid;}
+        .se {background-color:#00ffc85d;
+            color:blueviolet;
+            font-weight:bolder;
+            font-size:1.5em;
+            width:50%;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <form class="se" action="#" method="action">
+            <fieldset>
+           <legend>검색어를 입력해주세요.</legend>
+             <input type="search" size="20">
+            </fieldset>
+        </form>
+        <form class="se" action="#" method="post">
+            <fieldset>
+                <legend><b>아이디와 비밀번호를 입력해 주세요.</b></legend>
+                아이디: <input type="text" size="10">
+                암호: <input type="password" size="10"><br>
+                <input type="submit" value="로그인하기">
+                <input type="reset" value="취소">
+            </fieldset>
+        </form>
+        <p></p>
+        <form action="#" method="post"
+        style="background-color:rgba(255, 230, 0, 0.767);
+              text-align:center;"s">
+            <fieldset>
+                <legend>입력방식</legend>
+                    아이디: <input type="text"><br>
+                    비밀번호: <input type="password"><br>
+                    검색: <input type="search"><br>
+                    이메일: <input type="email"><br>
+                    전화번호: <input type="tel"><br>
+                    좋아하는 색깔 <input type="color"><br>
+                    태어난 해 <input type="number" min="1900" max="2021"><br>
+                    만족도 <input type="range" min="1" max="5"><br> 
+                    성별: 남성<input type="radio" name="sex" cheched="checked">
+                          여성<input type="radio" name="sex">
+                          기타<input type="radio" name="sex"><br>   
+                    좋아하는 계절: 봄<input type="checkbox">
+                                  여름<input type="checkbox">
+                                  가을<input type="checkbox">
+                                  겨울<input type="checkbox"><br><br>
+
+                    <input type="submit" value="전송하기">
+                    <input type="reset" value="취소">
+                    <input type="button" value="확인">
+                        <br><br>
+                    <input type="image" src="images/apple.png" alt="apple"><br>
+                    사진 첨부 <input type="file">
+
+
+
+            </fieldset>    
+        </form>
+    </p>
+
+
+    <table>
+        <caption>TITLE</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="c2">
+            <col>
+        </colgroup>
+            <thead>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </thead>    
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </tbod>    
+    </table>
+        <br>
+    <table>
+        <caption>한국 7,8월 블록버스터 영화</caption>
+        <colspan>
+            <col span="2" class="c2">
+            <col>
+        </colspan>
+            <thead>
+                <tr>
+                    <td width="30%" colspan="3">TITLE</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>외계+인 1부</td>
+                    <td>A</td>                    
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>한산</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>비상선언</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>헌트</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+            <tfoot>    
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+            </tfoot>    
+    </table>
+    <table>
+        <caption>안녕하세요.
+        </caption>
+            <colgroup>
+            </colgroup>
+        <tr>
+            <td colspan="3" style="">안녕</td>
+        </tr>    
+        <tr>
+            <td>Hello.</td>
+            <td>Halo.</td>
+            <td>moring.</td>
+        </tr>
+    </table>        
+
+    <table>
+        <tr>
+            <td colspan="3">자</td>        
+        </tr>
+        <tr>
+            <td>축</td>
+            <td>인</td>
+            <td>묘</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td rowspan="2">진</td>
+            <td>사</td>
+            <td>오</td>
+        </tr>
+        <tr>
+            <td>미</td>
+            <td>신</td>
+        </tr>
+    </table>
+    <BR>
+    <br>
+
+</body>
+</html>
