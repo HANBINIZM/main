@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .txt1{color:skyblue;
+          font-size:2em;
+          font-family:"궁서체";
+          font-weight:bolder;  
+    }   
+    .txt2{color:red;
+        font-size:3em;
+        font-style:italic;
+        font-weight:500;
+        text-decoration-line:underline;}
+    .txt3{font-size:2em;
+        font-weight:900;
+        font-style:oblique;
+        }
+    table {width:100%;
+            height:100%;
+           border:3px solid red;
+          border-collapse: collapse;}
+    .c1 {background-color:red}
+    .c2 {background-color:blue}       
+</style>
+</head>
+<body>
+    <p id="home">홈</p>
+    <img src="images/map.jpg" alt="map" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="50,10,290,130" href="http://daum.net" alt="daum" target="_blank">
+        <area shape="rect" coords="310,10,470,280" href="http://naver.com" alt="naver" target="_blank">
+    </map>
+<br>    
+    <i>기울임</i>
+    <em>기울임</em>
+<p>
+  1.  웹페이지 제작 시 <spon class="txt1">웹표준</spon>과 웹접근성을 <mark>준수</mark><sup>(1)</sup>합니다.</>    
+</p>
+<span class="txt2">
+    2. 글자 기울이기</span>
+<p>
+   3. 웹페이지 제작 시 <spon class="txt3">웹표준</spon>과 웹접근성<sub>web</sub>을 준수합니다.</>    
+</p>
+<hr>
+    <h1>반응형 웹 퍼플리싱 학습 순서</h1>
+        <ol>
+            <li>HTML</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>jquery</li>
+            <li>exercise</li>
+        </ol>
+    </h1>
+    <h1>반응형 웹 퍼플리싱 학습 순서</h1>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>jquery</li>
+            <li>exercise</li>
+        </ul>
+    </h1>
+    <h1>반응형 웹 퍼플리싱 학습 순서</h1>
+        <ol>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#home">css</a></li>
+            <li>javascript</li>
+            <li>jquery</li>
+            <li>exercise</li>
+        </ol>
+    </h1>
+    <p>
+    </p>
+        <br>
+    <a href="#home">맨 위로 가기</a>
+        <br>
+<table>
+    <colgroup>
+        <col class="c1">
+        <col class="c2">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>교과목</th>
+            <td>점수</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>국어</td>
+            <td>90</td>            
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>70</td>
+        </tr>
+    </tbody>
+    <tfoot>    
+        <tr>
+            <td>평균</td>
+            <td>80</td>
+        </tr>
+    </tfoot>    
+</table>
+</body>
+</html>
