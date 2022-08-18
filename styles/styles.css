@@ -4,6 +4,8 @@ a:hover{color:red;}
 body {background-color:silver;
      margin:20px;
      }
+fieldset{background-color:yellow;
+         font-weight:bolder;} 
 form {font-weight:blod;
         float:right;
         background-color:white;
