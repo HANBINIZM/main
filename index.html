@@ -14,13 +14,16 @@
     <span>
         <a class="menu" href="#" target="_self" style="background-color:greenyellow">&nbsp;NEWS&nbsp;</a>         
         <a class="menu" href="study.html" target="_self" style="background-color:yellow">&nbsp;STUDY&nbsp;</a>
-        <a class="menu" href="#" target="_self" style="background-color:greenyellow">&nbsp;APPLE&nbsp;</a>
-        <a class="menu" href="#" target="_self" style="background-color:yellow">&nbsp;SAMSUNG&nbsp;</a>
+        <a class="menu" href="#" target="_self" style="background-color:greenyellow">&nbsp;MOBILE&nbsp;</a>
+        <a class="menu" href="#" target="_self" style="background-color:yellow">&nbsp;illustrator&nbsp;</a>
         <form>
             <fieldset>
                 <legend>LOG-IN</legend>
-                    ID:<input type="text">
-                    PW:<input type="password">
+                    <label for="id">ID:</label>
+                        <input type="text" id ="id" required="required" placeholder="아이디" autocomplete="on">
+                    <label for="pw">PW:</label>
+                        <input type="password" id="pw" required="required" placeholder="비밀번호" >
+                        <input type="submit" class="submit" value="로그인" title="로그인">
             </fieldset>     
         </form>            
     </span>                    
@@ -44,7 +47,7 @@
         </p>
     
     <footer>
-        last updated 2022.08.18.
+        last updated 2022.08.19.
     </footer>
 
 </body>
