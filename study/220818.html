@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>220818</title>
+    <style>
+        .submit{color:white;
+                background-color:green;
+                font-size:1em;
+                font-weight:bolder;
+                padding:10px 100px 10px;
+                border-radius:5px;
+            }
+        fieldset {width:80%;
+                  height:250px;
+                  background-color:yellow;}    
+        input {margin-bottom:10px;}    
+        table {width:400px;
+            border:5px solid black;
+            border-collapse: collapse;}
+        tr {border:1px solid black;}
+        thead {background-color: aqua;}               
+    </style>
+</head>
+<body>
+    <h1>input submit button select option textarea</h1>    
+        <form action="#">
+            <input class="submit" type="submit" value="버튼" title="버튼"><br>
+            <input class="submit" type="image" src="images/naver.png" width="100" alt="sky"><br> 
+            <button>누르세요.</button>
+                <hr noshade>
+            <fieldset width="150px">
+                <legend>회원가입</legend>
+                    가입목적:<br>
+                        <textarea cols="50px" rows="5px">여기에 적어주세요.</textarea><br><br>
+                    전화번호:
+                        <select>
+                            <option selected>앞번호</option>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select>
+                        <input type="number" size="8" maxlength="8">
+                        <input type="submit" class="submit" value="INPUT">
+            </fieldset>        
+        <hr noshade size="5px">     
+    <h1>LABLE: 문자 입력창의 구역 지정.</h1>
+        <label for="name">아이디</label> <input type="text" id="name" size="5">
+        <label for="password">암호</label><input type="password" id="password"><br>
+        <input type="checkbox" id="1" value="국어"><label for="1">국어</label> 
+        <input type="checkbox" id="2" value="수학"><label for="2">수학</label>  
+    <hr noshade size="5px">
+        <br>
+            <table>
+                <colgroup>
+                    <col class="c1">
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="4">회원가입 입력창</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><label for="idd">아이디</label></th><td colspan="3"><input type="text" id="idd" title="아이디" placeholder="아이디"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="pw">암호</label></th><td colspan="3"><input type="password" id="pw" title="암호" placeholder="암호"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="pw2">암호 재입력</label></th><td colspan="3"><input type="password" id="pw2" placeholder="암호 재입력"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="mail">이메일</label></th>
+                            <td colspan="3"><input type="text" size="5" id="mail">@<input type="text" size="10"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">핸드폰 번호</label></th>
+                            <td colspan="3">
+                                <select>
+                                    <option selected id="phone" title="앞자리">선택</option>
+                                    <option>011</option>
+                                    <option>010</option>
+                                </select>-                            
+                                <input type="text" size="4">-
+                                <input type="text" size="4">
+                            </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">
+                            <input type="submit">
+                            <input type="reset" value="취소">
+                        </th>
+                    </tr>
+            </tfoot>
+            </table>
+    <br><br>
+        <fieldset>
+            <legend>내용 미리 알려주기, 자동완성 설정, 필수 작성</legend>
+            <br>
+                아이디:<input type="text" placeholder="아이디" required="required" autocomplete="on">
+                <input type="submit">
+        </fieldset>    
+    </form>
+
+    TABINDEX
+
+</body>
+</html>
