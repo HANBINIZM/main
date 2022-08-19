@@ -11,27 +11,28 @@
     <header>
         &nbsp;<a href="index.html"><img src="images/hb.png" alt="hanbin" width="50px"></a>      
     </header>
-    <span>
-        <a class="menu" href="#" target="_self" style="background-color:greenyellow">&nbsp;NEWS&nbsp;</a>         
-        <a class="menu" href="study.html" target="_self" style="background-color:yellow">&nbsp;STUDY&nbsp;</a>
-        <a class="menu" href="#" target="_self" style="background-color:greenyellow">&nbsp;MOBILE&nbsp;</a>
-        <a class="menu" href="#" target="_self" style="background-color:yellow">&nbsp;illustrator&nbsp;</a>
         <form>
             <fieldset>
                 <legend>LOG-IN</legend>
                     <label for="id">ID:</label>
-                        <input type="text" id ="id" required="required" placeholder="아이디" autocomplete="on">
+                        <input type="text" id ="id" size="8" value="준비중" readonly="readonly"
+                        pattern="\d{3}" required="required" placeholder="아이디" autocomplete="on">
                     <label for="pw">PW:</label>
-                        <input type="password" id="pw" required="required" placeholder="비밀번호" >
-                        <input type="submit" class="submit" value="로그인" title="로그인">
+                        <input type="password" id="pw" size="10" required="required" readonly="readonly" placeholder="비밀번호" >
+                        <input type="submit" class="submit" value="로그인" title="로그인" disabled="disabled">
             </fieldset>     
         </form>            
+    <span>
+        <a class="menu" href="#" target="_self" style="background-color:greenyellow"><s>STUDY</s></a>         
+        <a class="menu" href="html.html" target="_self" style="background-color:yellow">HTML & CSS</a>
+        <a class="menu" href="#" target="_self" style="background-color:greenyellow"><s>MOBILE</s></a>
+        <a class="menu" href="#" target="_self" style="background-color:yellow"><s>illustrator</s></a>       
     </span>                    
     <hr noshade size="1px" color="black">
         <br><br>
         <div class="content">
-            홈 화면
-        </div>
+            hello world.
+        </div> 
         <table>
             <tr>
                 <td>공지사항</td>
