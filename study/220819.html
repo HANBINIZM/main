@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>220819</title>
+    <style>
+        .A {background-color:pink;}
+        .B {background-color:blue;}
+        .C {background-color:purple;}
+        #wrap {width:300px;
+               border:5px solid red;
+               text-align:center;
+               margin:auto;}
+    </style>
 </head>
 <body>
     <form action="#" method="post">
@@ -15,7 +24,35 @@
                                 pattern="\d{3}-\d{4}-\d{4}" placeholder="입력: 010-XXXX-XXXX" ><br>
                     <input type="file" multiple="multiple"><br>            
                     <input type="submit" value="입력하기" title="전송">
-        </fieldset>     
+        </fieldset>
+        <br><Br>     
     </form>
+        <div id="wrap">
+            <header>헤더: 머리말</header>
+            <section>섹션: 본문</section>
+            <footer>푸터: 정보</footer>
+        </div>
+    <br><br>
+    <header>
+        <h1>반응형 웹</h1>
+        <nav>
+            <ul>
+                <li><a href="#" target="_self">MENU1</a></li>
+                <li><a href="#" target="_self">MENU2</a></li>
+                <li><a href="#" target="_self">MENU3</a></li>
+                <li><a href="#" target="_self">MENU4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <section>컨텐츠 그룹</section>
+        <section>컨텐츠 그룹</section>
+        <article>주요기사</article>
+        <aside>광고</aside>
+    </div>
+    <footer>
+        <address>주소</address>
+        <p>저작권</p>
+    </footer>    
 </body>
 </html>
