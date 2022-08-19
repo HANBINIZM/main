@@ -1,16 +1,19 @@
 a:link{color:black;}
 a:visited{color:black;}
 a:hover{color:red;}
-body {background-color:silver;
-     margin:20px;
-     }
-fieldset{font-weight:bolder;
-        margin-right:10px;
-        padding-left:10px;
-        padding-right:10px;} 
-form {font-weight:blod;
+body   {background-color:silver;
+        margin:20px;
+       }
+form   {font-weight:bolder;
+        margin-right:5px;
+        padding-left:5px;
+        padding-right:5px;
+        display:inline;
+        font-weight:blod;
         float:right;        
-        display:block;}
+        display:block;
+        text-align:right;
+        }
 header {font-size:3em;
         font-weight:bolder;
         vertical-align:middle;
@@ -18,22 +21,40 @@ header {font-size:3em;
         display:inline;
         text-decoration-line:none;
         }
-.menu  {font-size:45px;
+.submit {background-color:greenyellow;
         font-weight:bolder;
-        display:inline-block;
+        padding:5px;
+        }        
+.menu  {font-size:40px;        
+        font-weight:bolder;
+        height: 70px;
+        display:inline;
         float:right;
-        text-decoration-line:none;
+        text-decoration-line:underline;
+        padding:0px 10px 0px;
+        border-radius:10px;
+        margin:0px 5px 
         }
-.content {background-color:white;
-        width:100%;
-        height:500px;}
+.content {background-color:white;    
+          height:auto;
+          padding:10px;
+          display:block;
+          padding:10px;}
+iframe   {display:block;
+          width:100%;
+          background-color:mediumaquamarine;
+          }        
 table  {width:100%;
-        height:30px;
         text-align:center;
-        border:1px solid black;}
-td {width:30%;
-    border:1px solid black;
-    background-color:#C1EFFF;}        
+        }
+.main {width:80%;
+       height:500px;
+       border:5px solid red;}        
+.ad {border:5px solid blue;}        
+.banner {width:30%;
+         height:100px;
+         border:1px solid black;
+         background-color:aquamarine;}        
 .link {float:right;
         display:block;}     
 footer {float:center;}
