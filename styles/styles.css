@@ -2,10 +2,11 @@
 a:link{color:black;}
 a:visited{color:black;}
 a:hover{color:purple;}
+a:focus{color:red;}
 body   {background-color:silver;
         margin:20px;
         }
-header {weight:100px;
+header {height:125px;
         font-size:1em;
         font-weight:bolder;
         vertical-align:middle;
@@ -14,6 +15,7 @@ header {weight:100px;
         justify-content:space-between;
         text-decoration-line:none;
         padding:0px 10px 0px;
+        border-radius:20px 20px 0px 0px;
         }
 h1 {display:inline;}
 form   {font-weight:bolder;
@@ -39,7 +41,7 @@ audio {display:inline; }
 li     {font-size:2em;
         font-family:'Times New Roman', Times, serif;        
         font-weight:bolder;
-        width:300px;
+        width:200px;
         height: 100px;
         display:table-cell;
         text-align:center;
@@ -48,7 +50,7 @@ li     {font-size:2em;
         margin:0px 10px 0px;
         vertical-align: middle;
         transition-delay: width 1s, color 1s;
-        background-color:rgb(166, 168, 248);
+        border-radius:20px 20px 0px 0px;
         }
 .container {background-color:white;    
           height:auto;
@@ -62,7 +64,6 @@ iframe   {display:block;
           }        
 table  {width:100%;
         text-align:left;
-        border:5px solid purple;
         padding:5px;
         }
 .main {width:80%;
@@ -86,7 +87,12 @@ table  {width:100%;
        background-color:white;
        border-radius:15px;
        margin:5px;
-       text-align:center;}     
+       text-align:center;}
+table[class="ban"]
+       {border-radius:0px 0px 20px 20px;
+       background-color:white;
+       }       
+
 footer {text-align:center;}
 hr {color:black;
     height:5px;}
