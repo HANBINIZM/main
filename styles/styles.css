@@ -1,6 +1,7 @@
+@charset "utf-8"
 a:link{color:black;}
 a:visited{color:black;}
-a:hover{color:red;}
+a:hover{color:purple;}
 body   {background-color:silver;
         margin:20px;
         }
@@ -33,16 +34,21 @@ fieldset {display:inline;
 .submit {background-color:greenyellow;
         font-weight:bolder;
         padding:5px;
-        }        
-li     {font-size:2em;        
+        }
+audio {display:inline; }                
+li     {font-size:2em;
+        font-family:'Times New Roman', Times, serif;        
         font-weight:bolder;
+        width:300px;
         height: 100px;
         display:table-cell;
+        text-align:center;
         text-decoration-line:none;
         padding:5px 10px 5px;
         margin:0px 10px 0px;
         vertical-align: middle;
-        background-color:red;
+        transition-delay: width 1s, color 1s;
+        background-color:rgb(166, 168, 248);
         }
 .container {background-color:white;    
           height:auto;
@@ -64,7 +70,10 @@ table  {width:100%;
        border:5px solid green;}
 .article {border:5px dotted blue;}               
 .ad {border:5px solid blue;
-     vertical-align:top;}        
+     vertical-align:top;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow:ellipsis;   }        
 .banner {width:30%;
          height:100px;
          border:1px solid black;
@@ -81,3 +90,4 @@ table  {width:100%;
 footer {text-align:center;}
 hr {color:black;
     height:5px;}
+li a:hover {font-size:1.2em;}
