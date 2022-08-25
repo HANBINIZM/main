@@ -4,67 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HANBIN</title>
-    <link href="styles/styles.css" rel="stylesheet" type=""text/css">
+    <title>grid</title>
+    <style>
+        body {background-color:silver;
+              font-weight:400px;
+              }
+        
+        .warp {display:grid;
+               background-color:white;
+               border-radius:10px;
+               padding:5px 5px;
+               grid-template-columns:20% 60% 20%; 
+               grid-template-rows:50px 150px 150px 50px;               
+              }
+        .warp>div {border:3px solid black;
+                   border-radius:20px;
+                   margin:3px;
+                   padding:10px;
+                   font-weight:700;}
+        .header {grid-column-start:1;
+                 grid-column-end:4;
+                 background-color:cyan;
+                }
+        .side {grid-column-start:1;
+               grid-column-end:2;
+               grid-row-start:2;
+               grid-row-end:4;
+               background-color:tomato;} 
+        .con {grid-column-start:2;
+              grid-column-end:3;
+              grid-row-start:2;
+              grid-row-end:4;
+              background-color:skyblue;}
+        .ad {grid-column-start:3;
+             grid-column-end:4;
+             grid-row-start:2;
+             grid-row-end:3;
+             background-color:gold;}
+        .ab {grid-column-start:3;
+             grid-column-end:4;
+             grid-row-start:3;
+             grid-row-end:4;
+             background-color:yellowgreen;}           
+        .foot {grid-column-start:1;
+               grid-column-end:5;
+               background-color:plum;}
+        
+        h1[class^="cox"] {color:tomato;}
+        a:link {color:red;
+            text-decoration:none;}
+        a:visited {color:red;
+                   text-decoration:none;}
+        a:hover {color:blue;}
+        a:active {font-size:larger;}
+        a:focus {background-color:blue;}                               
+    </style>
 </head>
-<body>    
-    <header>
-        <h1><a href="index.html"><img class="logo" src="images/hb.png" alt="hanbin" width="70px"></a></h1>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>LOG-IN</legend>
-                        <label for="id">ID:</label>
-                            <input type="text" id ="id" size="8" value="준비중" readonly="readonly"
-                            pattern="\d{3}" required="required" placeholder="아이디" autocomplete="on">
-                        <label for="pw">PW:</label>
-                            <input txype="password" id="pw" size="10" required="required" readonly="readonly" placeholder="비밀번호" >
-                            <input type="submit" class="submit" value="로그인" title="로그인" disabled="disabled">
-        <br>
-                <a href="#" target="_blank"><u>아이디찾기</u></a>
-                <a href="#" target="_blank"><u>비밀번호 찾기</u></a>
-                <input type="checkbox" id="login"><label for="login">자동 로그인</label></a>
-                        </fieldset>     
-            </form>
-        <audio src="#" controls></audio>    
-        <nav>
-            <ul>
-                <li style="background-color:tomato"><a href="#" target="main" ><s>illustrator</s></a></li>
-                <li style="background-color:greenyellow"><a href="#" target="main" ><s>STUDY</s></a></li>  
-                <li style="background-color:tomato"><a href="html2.html" target="main" >HTML<br>CSS</a></li>
-                <li style="background-color:greenyellow"><a href="#" target="main" ><s>MOBILE</s></a></li>
-            </ul>    
-        </nav>            
-</header>                 
-        <div class="container">
-            <table>
-                <tr>
-                    <td rowspan="2" class="main">
-                        <iframe src="money.html" name="main" width="100%" height="100%"></iframe></td>
-                    <td class="article">주요기사</td>
-                </tr>
-                <tr>
-                    <th class="ad">
-                        광고
-                    </th>
-                </tr>
-            </table>
-        </div> 
-        <table class="ban">
-            <tr>
-                <th class="banner">공지사항</th>
-                <th class="banner">게시판</th>
-                <th class="link">
-                        <a href="http://twitter.com/hanbinizm"><img src="images/twitter.png" alt="twt" width="50px"></a>
-                        <a href="http://instagram.com/hanbinizm"><img src="images/insta.png" alt="insta" width="50px"></a>
-                        <a href="http://hanbinizm.tistory.com"><img src="images/t.png" alt="t" width="50px"></a>    
-                </th>
-            </tr>
-        </table>      
-    <br>   
-    <footer>
-        <address>last updated 2022.08.22.</address>
-        <p>made by HANBIN</p>
-    </footer>
-
+<body>
+    <div class="warp">
+        <div class="header">HEADER</div>
+        <div class="side">SIDEMENU</div>
+        <div class="con">CONTENT</div>
+        <div class="ad">AD</div>
+        <div class="ab">AB</div>
+        <div class="foot">FOOTER</div>
+    </div>
+    <br>
+    <div>
+        <h1 class="juso"><a href="html.html">진주시</a></h1>
+        <h1 class="cox"><a href="html.html">서울시</a></h1>
+        <h1 class="cox1">부산광역시</h1>
+        <h1 class="1cox">제주도</h1>
+        <h1 class="i cox u">독도</h1>
+    </div>
 </body>
-</html> 
+</html>
