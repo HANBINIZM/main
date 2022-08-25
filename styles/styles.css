@@ -2,22 +2,20 @@
 a:link{color:black;}
 a:visited{color:black;}
 a:hover{color:purple;}
-a:active{font-size:larger;}
+a:active{font-size:large;}
 a:focus{color:red;}
 body   {background-color:silver;
         margin:5px;
         }
-header {height:100px;
+header {height:60px;
         font-size:1em;
         background-color:yellow;
-        padding:0px 5px 0px;
+        padding:10px 10px 0px 10px;
         border-radius:20px;
         border:3px solid black;
-        vertical-align:middle;
         }
-       
-h1 {display:inline;}
-form   {font-weight:bolder;
+.logo {display:inline;}
+/* form   {font-weight:bolder;
         margin-right:3px;
         padding:0px 10px 0px;
         font-weight:bloder;
@@ -36,25 +34,24 @@ fieldset {display:inline;
 .submit {background-color:greenyellow;
         font-weight:bolder;
         padding:5px;
-        }
-audio {display:inline; }                
+        }        */      
 li     {font-size:1em;
-        font-family:'Times New Roman', Times, serif;        
-        font-weight:bolder;
-        width:70px;
-        height: 70px;
-        display:table-cell;
-        text-align:center;
+        font-family:'Times New Roman', Times, serif;
+        display:inline;
+        position:relative;
+        left:65%;
+        top:-55px;
+        width: 40px;
+        padding:5px;;
+        max-height: 40px;
         text-decoration-line:none;
-        padding:5px 10px 5px;
-        margin:0px 10px 0px;
-        vertical-align: middle;
-        transition-delay: width 1s, color 1s;
-        border-radius:50%;
-        } 
+        background-color: white;
+        border:3px solid black;
+        border-radius:20px;
+        }
 .warp {display:grid;
        grid-template-columns:35% 35% 30%;
-       grid-template-rows:35% 35% 30%;
+       grid-template-rows:100px 300px 100px;
       }        
 .warp > div {border:3px solid black;
              border-radius:10px;
@@ -71,6 +68,8 @@ li     {font-size:1em;
      grid-row-start:1;
      grid-row-end:2;
      background-color:gold;
+     text-align:center;
+     vertical-align:middle;
      }
 .aside {grid-column-start:3;
         grid-column-end:4;
@@ -95,6 +94,8 @@ li     {font-size:1em;
        grid-row-start:3;
        grid-row-end:4;
        background-color:oldlace;
+       text-align:center;
+       vertical-align:middle;
        }
 footer {text-align:center;}
 li a:hover {font-size:1.2em;}
