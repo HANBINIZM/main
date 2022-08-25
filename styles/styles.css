@@ -2,6 +2,7 @@
 a:link{color:black;}
 a:visited{color:black;}
 a:hover{color:purple;}
+a:active{font-size:larger;}
 a:focus{color:red;}
 body   {background-color:silver;
         margin:20px;
@@ -11,19 +12,21 @@ header {height:125px;
         font-weight:bolder;
         vertical-align:middle;
         display:flex;
-        background-color:white;
+        background-color:yellow;
         justify-content:space-between;
         text-decoration-line:none;
         padding:0px 10px 0px;
-        border-radius:20px 20px 0px 0px;
+        border-radius:20px;
+        border:3px solid black;
         }
 h1 {display:inline;}
 form   {font-weight:bolder;
-        margin-right:5px;
+        margin-right:3px;
         padding:0px 10px 0px;
         font-weight:bloder;
+        height:50px;
         float:right;        
-        display:block;
+        display:inline;
         text-align:center;
         }
 fieldset {display:inline;
@@ -38,11 +41,11 @@ fieldset {display:inline;
         padding:5px;
         }
 audio {display:inline; }                
-li     {font-size:2em;
+li     {font-size:1em;
         font-family:'Times New Roman', Times, serif;        
         font-weight:bolder;
-        width:200px;
-        height: 100px;
+        width:70px;
+        height: 70px;
         display:table-cell;
         text-align:center;
         text-decoration-line:none;
@@ -50,7 +53,7 @@ li     {font-size:2em;
         margin:0px 10px 0px;
         vertical-align: middle;
         transition-delay: width 1s, color 1s;
-        border-radius:20px 20px 0px 0px;
+        border-radius:50%;
         }
 .container {background-color:white;    
           height:auto;
