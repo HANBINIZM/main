@@ -1,8 +1,8 @@
 @charset "utf-8"
 a:link{color:black;}
 a:visited{color:black;}
-a:hover{color:purple;}
-a:active{font-size:large;}
+a:hover{background-color:tomato;}
+a:active{background-color:tomato;}
 a:focus{color:red;}
 body   {background-color:silver;
         margin:5px;
@@ -15,26 +15,22 @@ header {height:60px;
         border:3px solid black;
         }
 .logo {display:inline;}
-/* form   {font-weight:bolder;
-        margin-right:3px;
-        padding:0px 10px 0px;
-        font-weight:bloder;
-        height:50px;
-        float:right;        
+form   {font-weight:bold;
+        padding:0px;
+        height:40px;       
         display:inline;
         text-align:center;
         }
 fieldset {display:inline;
-          height:70px;
-          border:5px dotted black;
-          height:100px;
+          height:50px;
+          font-size:10px;
           vertical-align:center;
-          display:inline;}             
+        border:none;}             
 .logo {display:inline-block;}
 .submit {background-color:greenyellow;
         font-weight:bolder;
         padding:5px;
-        }        */      
+        }            
 li     {font-size:1em;
         font-family:'Times New Roman', Times, serif;
         display:inline;
@@ -51,7 +47,7 @@ li     {font-size:1em;
         }
 .warp {display:grid;
        grid-template-columns:35% 35% 30%;
-       grid-template-rows:100px 300px 100px;
+       grid-template-rows:100px 200px 100px;
       }        
 .warp > div {border:3px solid black;
              border-radius:10px;
@@ -98,4 +94,3 @@ li     {font-size:1em;
        vertical-align:middle;
        }
 footer {text-align:center;}
-li a:hover {font-size:1.2em;}
