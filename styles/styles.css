@@ -7,14 +7,29 @@ a:focus{color:red;}
 body   {background-color:silver;
         margin:5px;
         }
-header {height:60px;
+header > div
+       {height: 130px;
         font-size:1em;
         background-color:yellow;
-        padding:10px 10px 0px 10px;
+        padding:10px 15px 2 px 15px;
         border-radius:20px;
         border:3px solid black;
+        text-decoration-line:none;
         }
-.logo {display:inline;}
+.logo {float:left;}
+.menu  {float:right;
+        width:80px;
+        height:80px;
+        padding:15px;
+        margin:0px 5px 0px 5px;
+        font-size:120%;
+        font-weight: bolder;
+        text-align:center;
+        vertical-align:bottom;
+        text-decoration-line:none;
+        background-color: tomato;
+        border:3px solid black;
+        border-radius:80px;}        
 form   {font-weight:bold;
         padding:0px;
         height:40px;       
@@ -25,29 +40,14 @@ fieldset {display:inline;
           height:50px;
           font-size:10px;
           vertical-align:center;
-        border:none;}             
-.logo {display:inline-block;}
+        border:none;}        
 .submit {background-color:greenyellow;
         font-weight:bolder;
         padding:5px;
         }            
-li     {font-size:1em;
-        font-family:'Times New Roman', Times, serif;
-        display:inline;
-        position:relative;
-        left:70%;
-        top:-55px;
-        width: 40px;
-        padding:5px;;
-        max-height: 40px;
-        text-decoration-line:none;
-        background-color: white;
-        border:3px solid black;
-        border-radius:20px;
-        }
 .warp {display:grid;
-       grid-template-columns:35% 35% 30%;
-       grid-template-rows:100px 200px 100px;
+       grid-template-columns:38% 38% 24%;
+       grid-template-rows:100px 200px 150px;
       }        
 .warp > div {border:3px solid black;
              border-radius:10px;
@@ -91,6 +91,5 @@ li     {font-size:1em;
        grid-row-end:4;
        background-color:oldlace;
        text-align:center;
-       vertical-align:middle;
        }
 footer {text-align:center;}
