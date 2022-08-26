@@ -1,17 +1,19 @@
 @charset "utf-8"
 a:link{color:black;}
 a:visited{color:black;}
-a:hover{background-color:tomato;}
+a:hover{border:2px solid white;
+        color:white;}
 a:active{background-color:tomato;}
-a:focus{color:red;}
+a:focus{background-color:white;
+        border:1px solid red;}
 body   {background-color:silver;
         margin:5px;
         }
 header > div
-       {height: 140px;
+       {height: 130px;
         font-size:1em;
         background-color:yellow;
-        padding:10px 15px 10px 10px;
+        padding:5px 15px 5px 15px;
         border-radius:20px;
         border:3px solid black;
         text-decoration-line:none;
@@ -46,50 +48,54 @@ fieldset {display:inline;
         padding:5px;
         }            
 .warp {display:grid;
-       grid-template-columns:38% 38% 24%;
-       grid-template-rows:100px 200px 150px;
+       grid-template-columns:24% 38% 38%;
+       grid-template-rows:100px 400px 100px;
       }        
 .warp > div {border:3px solid black;
-             border-radius:10px;
-             padding:20px;
+             border-radius:10px;             
              margin:3px;}        
-.main {grid-column-start:1;
-       grid-column-end:3;
+.main {grid-column-start:2;
+       grid-column-end:4;
        grid-row-start:1;
        grid-row-end:3;
        background-color:skyblue;
+       padding:0px; !important
        }             
-.ad {grid-column-start:3;
-     grid-column-end:4;
+.ad {grid-column-start:1;
+     grid-column-end:2;
      grid-row-start:1;
      grid-row-end:2;
      background-color:gold;
      text-align:center;
      vertical-align:middle;
      }
-.aside {grid-column-start:3;
-        grid-column-end:4;
+.aside {grid-column-start:1;
+        grid-column-end:2;
         grid-row-start:2;
         grid-row-end:3;
-        background-color:tomato;
+        background-color:blueviolet;
         }
-.banner1{grid-column-start:1;
-         grid-column-end:2;
+.banner1{grid-column-start:2;
+         grid-column-end:3;
          grid-row-start:3;
          grid-row-end:4;
          background-color:greenyellow;
         }       
-.banner2{grid-column-start:2;
-         grid-column-end:3;
+.banner2{grid-column-start:3;
+         grid-column-end:4;
          grid-row-start:3;
          grid-row-end:4;
          background-color:tomato;
         }                         
-.link {grid-column-start:3;
-       grid-column-end:4;
+.link {grid-column-start:1;
+       grid-column-end:2;
        grid-row-start:3;
        grid-row-end:4;
        background-color:oldlace;
        text-align:center;
+       padding:20px;
        }
+iframe {border:0px solid black;
+        border-radius:10px;} 
 footer {text-align:center;}
+a:first-letter {font-size:200%;}
