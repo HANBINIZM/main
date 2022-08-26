@@ -1,4 +1,5 @@
 @charset "utf-8"
+
 a:link{color:black;}
 a:visited{color:black;}
 a:hover{border:2px solid white;
@@ -73,7 +74,11 @@ fieldset {display:inline;
         grid-column-end:2;
         grid-row-start:2;
         grid-row-end:3;
-        background-color:blueviolet;
+        background-color:white;}
+.aside:first-line
+        {font-size:150%;
+         font-weight:bolder;
+         text-align:center;
         }
 .banner1{grid-column-start:2;
          grid-column-end:3;
