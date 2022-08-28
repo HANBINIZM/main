@@ -6,44 +6,85 @@
     <title>HANBIN</title>
     <link href="styles/styles.css" rel="stylesheet" type=""text/css">
 <style>
-    @media(max-width:700px){
+    @media(max-width:1000px){
         body {background-color:black;
-            width:100%;
-        }
+            }
         header > div
-                {background-color:tomato;
-                 padding:2%;
-                 margin:1%;
-                 }
-        .logo{display:block;}
-        img {width:15%;}
+                {height:70px;
+                 background-color:tomato;
+                 padding:2%;                
+                 }                      
         span {display:inline;
               text-align:center;
-              align-content:center;}
-        span > .menu
-              {display:inline;
+              float:right}      
+        .menu {display:inline;
                text-align:center;
-               width:21%;
-               height:30%;
-               border-radius:10px;
+               width:10%;
+               height:80%;
                font-size:50%;
-               padding:0.5px;
-               margin:1%;
+               padding:1px;
                vertical-align:middle;
-               float:left;}        
+               background-color:yellow;
+               border-radius:50%;
+               }
+        .menu > img {width:60px;}       
+        form {display:none;}
+        .warp {
+            display:grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows:70px 350px 70px 70px;   
+            }
+        .ad {
+            grid-column-start:1;
+            grid-column-end:2; 
+            grid-row-start:1;
+            grid-row-end:2;
+            }
+        .aside {
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end:2;
+        }
+        .main {
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:2;
+            grid-row-end:3;
+            background-color:yellow;
+        }
+        .banner1 {
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:3;
+            grid-row-end:4;  
+        }
+        .banner2 {
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:3;
+            grid-row-end:4;
+        }
+        .link {
+            grid-column-start:1;
+            grid-column-end:3;
+            grid-row-start:4;
+            grid-row-end:5;
+            vertical-align:middle;
+        }
+        a>img {width:30px;}                           
+        footer {color:white;}             
 } 
 </style>
 </head>
 <body>        
         <header>
             <div>
-                <a class="logo" href="index.html"><img src="images/hb.png" alt="hanbin" width="130px"></a>
-                    <span>    
-                        <a class="menu" href="#" target="main" order="4">A<br><s>ABOUT</s></a>
-                        <a class="menu" href="#" target="main" order="3">S<br><s>STUDY</s></a>         
-                        <a class="menu" href="html2.html" target="main" order="2">U<br>UI&UX</a> &nbsp;
-                        <a class="menu" href="#" target="main" order="1">M<s><br>MOBILE</br></s></a>
-                    </span>
+                <a class="menu" href="index.html" order="0"><img src="images/hb.png" alt="hanbin"></a>    
+                <a class="menu" href="#" target="main" order="4">A<br><s>ABOUT</s></a>
+                <a class="menu" href="#" target="main" order="3">S<br><s>STUDY</s></a>         
+                <a class="menu" href="html2.html" target="main" order="2">U<br>UI&UX</a> &nbsp;
+                <a class="menu" href="#" target="main" order="1">M<s><br>MOBILE</br></s></a>
             </div>    
         </header>
 <div class="warp">
@@ -77,7 +118,7 @@
 </div>         
     <footer>
         <br>
-        <address>last updated 2022.08.26.</address>
+        <address>last updated 2022.08.28.</address>
         <p>made by HANBIN</p>
     </footer>    
 </body>
