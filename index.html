@@ -1,39 +1,54 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" minimum-scale="1", maximum-scale="1">
-    <title>HANBIN</title>
-    <link href="styles/styles.css" rel="stylesheet" type=""text/css">
-<style>
-    @media(max-width:1000px){
+@charset "utf-8"
+a:link{color:black;}
+a:visited{color:black;}
+a:hover{border:2px solid white;
+        background-color:black;
+        color:white;}
+a:active{background-color:tomato;}
+a:focus{background-color:white;
+        border:1px solid red;}
+@media screen and (max-width:1000px) {
         body {background-color:black;
             }
         header > div
-                {height:70px;
+                {display:block;
+                 height:80px;              
                  background-color:tomato;
-                 padding:2%;                
+                 padding:2%;
+                 border:0.2em solid white;
+                 border-radius:5px;
+                 margin:0.5em;                
                  }                      
-        span {display:inline;
-              text-align:center;
-              float:right}      
-        .menu {display:inline;
-               text-align:center;
-               width:10%;
-               height:80%;
-               font-size:50%;
-               padding:1px;
-               vertical-align:middle;
+        .menu {text-decoration-line:none; 
+               float:right;     
+               font-size:20px;
+               padding:5px;
+               margin:35px 5px 5px ;
+               border:3px solid black;
                background-color:yellow;
-               border-radius:50%;
                }
-        .menu > img {width:60px;}       
+        .menu:first-child {float:left;
+                           background:none;
+                           border:none;
+                           margin: 0px;}       
+        .menu > img {width:70px;
+                     display:inline;   }       
         form {display:none;}
         .warp {
             display:grid;
+            background-color:skyblue;
+            border:0.5em solid white;
+            border-radius:10px;    
             grid-template-columns:50% 50%;
-            grid-template-rows:70px 350px 70px 70px;   
+            grid-template-rows:70px 350px 70px 70px;
+              
             }
+        .ad, .aside, .main, .banner1, .banner2, .link
+            {border:3px solid black;
+             border-radius:5px;
+             margin:5px;
+             padding:5px;        
+                }         
         .ad {
             grid-column-start:1;
             grid-column-end:2; 
@@ -51,7 +66,7 @@
             grid-column-end:3;
             grid-row-start:2;
             grid-row-end:3;
-            background-color:yellow;
+            background-color:tomato;
         }
         .banner1 {
             grid-column-start:1;
@@ -71,55 +86,107 @@
             grid-row-start:4;
             grid-row-end:5;
             vertical-align:middle;
+            text-align:center;
+            vertical-align:center;
         }
         a>img {width:30px;}                           
         footer {color:white;}             
-} 
-</style>
-</head>
-<body>        
-        <header>
-            <div>
-                <a class="menu" href="index.html" order="0"><img src="images/hb.png" alt="hanbin"></a>    
-                <a class="menu" href="#" target="main" order="4">A<br><s>ABOUT</s></a>
-                <a class="menu" href="#" target="main" order="3">S<br><s>STUDY</s></a>         
-                <a class="menu" href="html2.html" target="main" order="2">U<br>UI&UX</a> &nbsp;
-                <a class="menu" href="#" target="main" order="1">M<s><br>MOBILE</br></s></a>
-            </div>    
-        </header>
-<div class="warp">
-        <div class="main"><iframe name="main" width="100%" height="100%" noscroll></iframe></div>
-        <div class="ad">
-            <form action="#" method="post">
-                <fieldset>
-                        <label for="id">ID:</label>
-                            <input type="text" id ="id" size="8" value="준비중" readonly="readonly"
-                            pattern="\d{3}" required="required" placeholder="아이디" autocomplete="on">
-                        <label for="pw">PW:</label>
-                            <input txype="password" id="pw" size="10" required="required" readonly="readonly" placeholder="비밀번호" >
-                            <input type="submit" class="submit" value="로그인" title="로그인" disabled="disabled">
-        <br>
-                <a href="#" target="_blank"><u>회원가입</u></a>
-                <a href="#" target="_blank"><u>아이디/비밀번호 찾기</u></a>
-                <input type="checkbox" id="login"><label for="login">자동 로그인</label></a>
-                        </fieldset>     
-            </form>
-        </div>
-        <div class="aside">FAVORITE<br>
-            STARBUCKS
-        </div>
-        <div class="banner1">공지사항</div>
-        <div class="banner2">게시판</div>
-        <div class="link">
-            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
-            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
-            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>    
-        </div>
-</div>         
-    <footer>
-        <br>
-        <address>last updated 2022.08.28.</address>
-        <p>made by HANBIN</p>
-    </footer>    
-</body>
-</html> 
+    }
+@media screen and (min-width:1001px) {    
+body   {background-color:silver;
+        margin:5px;
+        }
+header > div
+       {height: 130px;
+        font-size:1em;
+        background-color:yellow;
+        padding:5px 15px 5px 15px;
+        border-radius:20px;
+        border:3px solid black;
+        text-decoration-line:none;
+        }
+.logo {float:left;}
+.menu  {float:right;
+        width:80px;
+        height:80px;
+        padding:15px;
+        margin:0px 5px 0px 5px;
+        font-size:120%;
+        font-weight: bolder;
+        text-align:center;
+        vertical-align:bottom;
+        text-decoration-line:none;
+        background-color: tomato;
+        border:3px solid black;
+        border-radius:80px;}        
+form   {font-weight:bold;
+        padding:0px;
+        height:40px;       
+        display:inline;
+        text-align:center;
+        }
+fieldset {display:inline;
+          height:50px;
+          font-size:10px;
+          vertical-align:center;
+        border:none;}        
+.submit {background-color:greenyellow;
+        font-weight:bolder;
+        padding:5px;
+        }            
+.warp {display:grid;
+       grid-template-columns:24% 38% 38%;
+       grid-template-rows:100px 500px 100px;
+      }        
+.warp > div {border:3px solid black;
+             border-radius:10px;             
+             margin:3px;}        
+.main {grid-column-start:2;
+       grid-column-end:4;
+       grid-row-start:1;
+       grid-row-end:3;
+       background-color:skyblue;
+       padding:0px; !important
+       }             
+.ad {grid-column-start:1;
+     grid-column-end:2;
+     grid-row-start:1;
+     grid-row-end:2;
+     background-color:gold;
+     text-align:center;
+     vertical-align:middle;
+     }
+.aside {grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:2;
+        grid-row-end:3;
+        background-color:white;}
+.aside:first-line
+        {font-size:150%;
+         font-weight:bolder;
+         text-align:center;
+        }
+.banner1{grid-column-start:2;
+         grid-column-end:3;
+         grid-row-start:3;
+         grid-row-end:4;
+         background-color:greenyellow;
+        }       
+.banner2{grid-column-start:3;
+         grid-column-end:4;
+         grid-row-start:3;
+         grid-row-end:4;
+         background-color:tomato;
+        }                         
+.link {grid-column-start:1;
+       grid-column-end:2;
+       grid-row-start:3;
+       grid-row-end:4;
+       background-color:oldlace;
+       text-align:center;
+       padding:20px;
+       }
+}       
+iframe {border:0px solid black;
+        border-radius:10px;} 
+footer {text-align:center;}
