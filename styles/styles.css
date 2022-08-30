@@ -28,10 +28,13 @@ a:focus{background-color:white;
                background-color:yellow;
                }
         .menu:first-child {float:left;
+                           display:inline;     
                            background:none;
                            border:none;
                            margin: 0px;
-                           width:70px;}      
+                           width:10px;
+                           }
+        .menu>img {width:60px;}                   
         form {display:none;}
         .warp {
             display:grid;
@@ -91,7 +94,7 @@ a:focus{background-color:white;
             text-align:center;
             line-height:50px;
         }
-        a>img {width:30px;}                           
+        .link>img {width:30px;}                           
         footer {color:white;}             
     }
 @media screen and (min-width:1001px) {    
@@ -120,12 +123,12 @@ header > div
         background-color: tomato;
         border:3px solid black;
         border-radius:80px;}
-.menu:first-child {width:80px;
-                   float:left;
+.menu:first-child {float:left;
                    background:none;
                    border:none;
-                   margin: 0px;}
-.menu > img {width:80px;}                                    
+                   margin: 0px;
+                   }
+.menu > img { width:70px;}                                                      
 form   {font-weight:bold;
         padding:0px;
         height:40px;       
