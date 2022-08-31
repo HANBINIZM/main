@@ -11,12 +11,12 @@
             }
         header > div
                 {display:block;
-                 height:70px;              
+                 height:80px;              
                  background-color:tomato;
                  padding:2%;
                  border:0.2em solid white;
                  border-radius:5px;
-                 margin:0em;                
+                 margin:0.5em;                
                  }                      
         .menu {text-decoration-line:none; 
                float:right;     
@@ -33,26 +33,24 @@
                            margin: 0px;
                            width:10px;
                            }
-        .menu>img {width:50px;}                   
+        .menu>img {width:60px;}                   
         form {display:none;}
         .warp {
             display:grid;
             background-color:skyblue;
-            margin-top:0.2px;                                                        
-            border:0.2em solid white;
+            border:0.5em solid white;
             border-radius:10px;    
             grid-template-columns:50% 50%;
-            grid-template-rows:40px 350px 40px 70px;
+            grid-template-rows:70px 350px 70px 70px;
               
             }
         .ad, .aside, .main, .banner1, .banner2, .link
             {font:bolder 5vw '명조';
              text-align:center;
              text-shadow:3px 3px 3px white;
-             line-height:1.5;
              border:3px solid black;
              border-radius:5px;
-             margin:1px;
+             margin:5px;
              padding:5px;        
                 }         
         .ad {
@@ -95,7 +93,7 @@
             text-align:center;
             line-height:50px;
         }
-        .link>img {width:25px;}                           
+        .link>img {width:30px;}                           
         footer {color:white;}             
     }
     </style>
@@ -103,15 +101,15 @@
 <body>        
         <header>
             <div>
-                <a class="menu" href="index.html" order="0"><img src="images/hb.png" width="60px" alt="hanbin"></a>    
+                <a class="menu" href="#" order="0"><img src="images/hb.png" width="60px" alt="hanbin"></a>    
                 <a class="menu" href="#" target="main" order="4">ABOUT</a>
                 <a class="menu" href="#" target="main" order="3">STUDY</a>         
-                <a class="menu" href="html2.html" target="main" order="2">UI&UX</a> &nbsp;
+                <a class="menu" href="#" target="main" order="2">UI&UX</a> &nbsp;
                 <a class="menu" href="#" target="main" order="1">MOBILE</a>          
             </div>    
         </header>
 <div class="warp">
-        <div class="main"><iframe name="main" width="100%" height="100%" noscroll></iframe></div>
+        <div class="main"><iframe src="http://daum.net" name="main" width="100%" height="100%" noscroll></iframe></div>
         <div class="ad">
             <span>LOG-IN</span>
                 <form action="#" method="post">
@@ -134,14 +132,15 @@
         <div class="banner1">NOTICE</div>
         <div class="banner2">BOARD</div>
         <div class="link">
-            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
-            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
-            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>    
+            <a href="http://apple.com/kr" target="main"><img src="images/apple.png" alt="apple" width="50px"></a>
+            <a href="http://twitter.com/hanbinizm" target="main"><img src="images/twitter.png" alt="twt" width="50px"></a>
+            <a href="http://instagram.com/hanbinizm" target="main"><img src="images/insta.png" alt="insta" width="50px"></a>
+            <a href="http://hanbinizm.tistory.com" target="main"><img src="images/t.png" alt="t" width="50px"></a>    
         </div>
 </div>         
     <footer>
         <br>
-        <address>last updated 2022.08.30.</address>
+        <address>last updated 2022.08.31.</address>
         <p>made by HANBIN</p>
     </footer>    
 </body>
