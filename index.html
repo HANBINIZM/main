@@ -41,8 +41,7 @@
             border:0.5em solid white;
             border-radius:10px;    
             grid-template-columns:50% 50%;
-            grid-template-rows:70px 350px 70px 70px;
-              
+            grid-template-rows:70px 350px 70px 70px; 
             }
         .ad, .aside, .main, .banner1, .banner2, .link
             {font:bolder 5vw '명조';
@@ -53,19 +52,20 @@
              margin:5px;
              padding:5px;        
                 }         
-        .ad {
+        .ad {display:none;
             grid-column-start:1;
             grid-column-end:2; 
             grid-row-start:1;
             grid-row-end:2;
-            }
+            }  
         .aside {
-            grid-column-start:2;
+            grid-column-start:1;
             grid-column-end:3;
             grid-row-start:1;
             grid-row-end:2;
         }
         .main {
+            padding:2%;
             grid-column-start:1;
             grid-column-end:3;
             grid-row-start:2;
@@ -109,7 +109,14 @@
             </div>    
         </header>
 <div class="warp">
-        <div class="main"><iframe src="http://daum.net" name="main" width="100%" height="100%" noscroll></iframe></div>
+        <div class="main">
+            <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
+            <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
+            <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
+            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
+            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
+            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
+        </div>
         <div class="ad">
             <span>LOG-IN</span>
                 <form action="#" method="post">
@@ -127,15 +134,13 @@
                         </fieldset>     
             </form>
         </div>
-        <div class="aside">FAVORITE<br>
+        <div class="aside">
+            FAVORITE 
         </div>
         <div class="banner1">NOTICE</div>
         <div class="banner2">BOARD</div>
         <div class="link">
-            <a href="http://apple.com/kr" target="main"><img src="images/apple.png" alt="apple" width="50px"></a>
-            <a href="http://twitter.com/hanbinizm" target="main"><img src="images/twitter.png" alt="twt" width="50px"></a>
-            <a href="http://instagram.com/hanbinizm" target="main"><img src="images/insta.png" alt="insta" width="50px"></a>
-            <a href="http://hanbinizm.tistory.com" target="main"><img src="images/t.png" alt="t" width="50px"></a>    
+            UPDATE HISTORY 
         </div>
 </div>         
     <footer>
