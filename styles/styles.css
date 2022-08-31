@@ -150,7 +150,11 @@ fieldset {display:inline;
       }        
 .warp > div {border:3px solid black;
              border-radius:10px;             
-             margin:3px;}        
+             margin:3px;
+             font-weight:bold;
+             font-size:2em;
+             text-align:center;
+             text-shadow:3px 3px 3px white;}        
 .main {grid-column-start:2;
        grid-column-end:4;
        grid-row-start:1;
@@ -167,11 +171,7 @@ fieldset {display:inline;
      vertical-align:middle;
      }
 .ad > span {display:none;}     
-.aside {font-weight:bold;
-        font-size:2em;
-        text-align:center;
-        text-shadow:3px 3px 3px white;
-        grid-column-start:1;
+.aside {grid-column-start:1;
         grid-column-end:2;
         grid-row-start:2;
         grid-row-end:3;
