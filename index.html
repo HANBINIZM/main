@@ -6,20 +6,19 @@
     <title>HANBIN</title>
     <style>
         /* 링크 태그 */
-        @charset "utf-8"
-            a:link{color:black;}
+            a:link {color:blue;}
             a:visited{color:black;}
             a:hover{border:2px solid white;
                     color:white;}
             a:active{background-color:tomato;}
             a:focus{background-color:white;
                     border:1px solid red;}
+         
         /* 모바일 미디어쿼리 */            
-        @media screen and (max-width:1000px)
-    {
+        @media screen and (max-width:1000px) {
             a:link{text-decoration:none;}    
             a:hover{border:0px solid black;}    
-                body {background-color:#F5EDDC;;
+                body {background-color:#F5EDDC;
                     }
                 header > div
                         {display:block;
@@ -54,16 +53,16 @@
                     border:0.2em solid #EB1D36;
                     border-radius:5px;    
                     grid-template-columns:50% 50%;
-                    grid-template-rows:70px 350px 70px 70px; 
+                    grid-template-rows:7rem 40rem 5rem 5rem; 
                     }
                 .ad, .aside, .main, .banner1, .banner2, .link
-                    {font:bolder 5vw '명조';
+                    {font:bolder 4vw '명조';
                     text-align:center;
                     text-shadow:3px 3px 3px white;
                     border:3px solid #EB1D36;
                     border-radius:5px;
                     margin:5px;
-                    padding:5px;        
+                    padding:1px;        
                         }         
                 .ad {display:none;
                     grid-column-start:1;
@@ -104,9 +103,7 @@
                     grid-column-end:3;
                     grid-row-start:4;
                     grid-row-end:5;
-                    vertical-align:middle;
                     text-align:center;
-                    line-height:50px;
                     background-color:#FA9494;
                 }
                 .link>img {width:30px;}                           
@@ -163,6 +160,7 @@
                 .warp {display:grid;
                     grid-template-columns:24% 38% 38%;
                     grid-template-rows:100px 500px 100px;
+                    
                     }        
                 .warp > div {border:3px solid black;
                             border-radius:10px;             
@@ -170,13 +168,14 @@
                             font-weight:bold;
                             font-size:2em;
                             text-align:center;
-                            text-shadow:3px 3px 3px white;}        
+                            text-shadow:3px 3px 3px white;
+                            padding:10px; !important}        
                 .main {grid-column-start:2;
                     grid-column-end:4;
                     grid-row-start:1;
                     grid-row-end:3;
                     background-color:skyblue;
-                    padding:0px; !important
+                    
                     }             
                 .ad {grid-column-start:1;
                     grid-column-end:2;
@@ -215,7 +214,7 @@
                     grid-row-end:4;
                     background-color:oldlace;
                     text-align:center;
-                    padding:20px;
+                    padding:10px;
                     }       
                 iframe {border:0px solid black;
                         border-radius:10px;} 
@@ -236,13 +235,9 @@
         </header>
 <div class="warp">
         <div class="main">
-            <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
-            <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
-            <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
-            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
-            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
-            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
-            <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
+            <iframe name="main" width="100%" height="100%">
+               
+           </iframe>
         </div>
         <div class="ad">
             <span>LOG-IN</span>
@@ -262,12 +257,19 @@
             </form>
         </div>
         <div class="aside">
-            FAVORITE 
+            FAVORITE<br>
+                <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
+                <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
+                <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
+                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
+                <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
+                <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
+                <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
         </div>
         <div class="banner1">NOTICE</div>
-        <div class="banner2">GALLERY</div>
+        <div class="banner2"><a href=gallery.html target="main">GALLERY</a></div>
         <div class="link">
-            <a href="#" target="main">UPDATE HISTORY</a> 
+            <a href="gallery.html" target="main">UPDATE HISTORY</a> 
         </div>
 </div>         
     <footer>
