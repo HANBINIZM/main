@@ -8,16 +8,23 @@
         /* 링크 태그 */
             a:link {color:blue;}
             a:visited{color:black;}
-            a:hover{border:2px solid white;
-                    color:white;}
-            a:active{background-color:tomato;}
-            a:focus{background-color:white;
-                    border:1px solid red;}
+            a:hover{border:3vw double white;
+                    color:white;
+                    width:8vw;
+                    height:8vw;}
+            
          
         /* 모바일 미디어쿼리 */            
         @media screen and (max-width:1000px) {
             a:link{text-decoration:none;}    
-            a:hover{border:0px solid black;}    
+            a:hover{border:1vw double white;
+                    color:white;
+                    width:8vw;
+                    height:8vw;
+                    text-align:center;}
+            a:active{background-color:tomato;}
+            a:focus{background-color:white;
+                    border:1px solid red;}            
                 body {background-color:#F5EDDC;
                     }
                 header > div
@@ -31,11 +38,13 @@
                         }                      
                 .menu {text-decoration-line:none; 
                     float:right;     
-                    font:bolder 10px '고딕'; 
-                    padding:5px;
-                    margin:20px 1px 5px ;
+                    font:bolder 2vw '고딕'; 
+                    padding:1vw;
+                    width:7vw;
+                    height:7vw;
+                    margin:2vw 1vw;
                     border:5px double #EB1D36;
-                    border-radius:10%;
+                    border-radius:20%;
                     background-color:#FA9494;
                     }
                 .menu:first-child {float:left;
@@ -53,7 +62,7 @@
                     border:0.2em solid #EB1D36;
                     border-radius:5px;    
                     grid-template-columns:50% 50%;
-                    grid-template-rows:7rem 40rem 5rem 5rem; 
+                    grid-template-rows:35vw 100vw 25vw 25vw; 
                     }
                 .ad, .aside, .main, .banner1, .banner2, .link
                     {font:bolder 4vw '명조';
@@ -79,7 +88,7 @@
                     background-color:#FA9494;
                 }
                 .main {
-                    padding:2%;
+                    padding:2vw;
                     grid-column-start:1;
                     grid-column-end:3;
                     grid-row-start:2;
