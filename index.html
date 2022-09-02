@@ -6,13 +6,7 @@
     <title>HANBIN</title>
     <style>
         /* 링크 태그 */
-            a:link {color:blue;}
-            a:visited{color:black;}
-            a:hover{border:3vw double white;
-                    color:white;
-                    width:8vw;
-                    height:8vw;}
-            
+         
          
         /* 모바일 미디어쿼리 */            
         @media screen and (max-width:1000px) {
@@ -29,7 +23,7 @@
                     }
                 header > div
                         {display:block;
-                        height:80px;              
+                        height:15vw;              
                         background-color:#CFD2CF;
                         padding:2%;
                         border:0.2em solid #EB1D36;
@@ -64,7 +58,7 @@
                     grid-template-columns:50% 50%;
                     grid-template-rows:35vw 100vw 25vw 25vw; 
                     }
-                .ad, .aside, .main, .banner1, .banner2, .link
+                .ad, .aside, .main, .banner1, .banner2, .gallery
                     {font:bolder 4vw '명조';
                     text-align:center;
                     text-shadow:3px 3px 3px white;
@@ -107,19 +101,26 @@
                     grid-row-start:3;
                     grid-row-end:4;
                 }
-                .link {
+                .gallery {
                     grid-column-start:1;
                     grid-column-end:3;
                     grid-row-start:4;
                     grid-row-end:5;
                     text-align:center;
-                    background-color:#FA9494;
+                    background-color:tomato;
                 }
-                .link>img {width:30px;}                           
+                .gallery>img {width:30px;}                           
                 footer {color:black}  
     }               
         /* PC 미디어쿼리 */     
-        @media screen and (min-width:1001px){    
+        @media screen and (min-width:1001px){ 
+                a:link {color:blue;}
+                a:visited{color:black;}
+                a:hover{border:3px solid white;
+                        color:white;
+                        width:80px;
+                        height:80px;}
+                
                 body   {background-color:silver;
                         margin:5px;
                         }
@@ -217,11 +218,11 @@
                         grid-row-end:4;
                         background-color:tomato;
                         }                         
-                .link {grid-column-start:1;
+                .gallery {grid-column-start:1;
                     grid-column-end:2;
                     grid-row-start:3;
                     grid-row-end:4;
-                    background-color:oldlace;
+                    background-color:tomato;
                     text-align:center;
                     padding:10px;
                     }       
@@ -270,14 +271,14 @@
                 <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
                 <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
                 <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
-                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a>
+                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a><br>
                 <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
                 <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
                 <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
         </div>
         <div class="banner1">NOTICE</div>
         <div class="banner2"><a href=gallery.html target="main">GALLERY</a></div>
-        <div class="link">
+        <div class="gallery">
             <a href="gallery.html" target="main">UPDATE HISTORY</a> 
         </div>
 </div>         
