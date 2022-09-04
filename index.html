@@ -38,6 +38,7 @@
                            border-radius:10%;
                            background-color:yellow;}                                 
                 .menu {text-decoration-line:none; 
+                    display:none;
                     float:right;     
                     font:bolder 2vw '고딕'; 
                     padding:1vw;
@@ -63,7 +64,7 @@
                     border:0.2em solid #EB1D36;
                     border-radius:5px;    
                     grid-template-columns:50% 50%;
-                    grid-template-rows:35vw 100vw 25vw 25vw; 
+                    grid-template-rows:40vw 100vw 25vw 25vw; 
                     }
                 .ad, .aside, .main, .banner1, .banner2, .gallery
                     {font:bolder 4vw '명조';
@@ -136,6 +137,7 @@
                         font-size:1em;
                         background-color:yellow;
                         padding:5px 15px 5px 15px;
+                        line-height:80px;
                         border-radius:20px;
                         text-decoration-line:none;
                         border:3px solid black;
@@ -150,13 +152,13 @@
                         background-color:yellow;
                         padding:15px;
                         margin:0px 5px 0px 5px;
-                        font-size:100%;
+                        font-size:200%;
                         font-weight: bolder;
                         text-align:center;
                         vertical-align:bottom;
                         text-decoration-line:none;
                         background-color: white;
-                        border:3px solid black;
+                        border:10px double black;
                         border-radius:40px;}         
                 .menu  {float:right;
                         width:80px;
@@ -166,7 +168,7 @@
                         font-size:120%;
                         font-weight: bolder;
                         text-align:center;
-                        vertical-align:bottom;
+                        line-height:80px;
                         text-decoration-line:none;
                         background-color: tomato;
                         border:3px solid black;
@@ -209,9 +211,8 @@
                     grid-column-end:4;
                     grid-row-start:1;
                     grid-row-end:3;
-                    background-color:skyblue;
-                    
-                    }             
+                    background-color:skyblue;}
+                .banner1, .banner2, .gallery {visibility:hidden;}              
                 .ad {grid-column-start:1;
                     grid-column-end:2;
                     grid-row-start:1;
@@ -244,12 +245,12 @@
                         background-color:tomato;
                         }                         
                 .gallery {grid-column-start:1;
-                    grid-column-end:2;
-                    grid-row-start:3;
-                    grid-row-end:4;
-                    background-color:tomato;
-                    text-align:center;
-                    padding:10px;
+                          grid-column-end:2;
+                          grid-row-start:3;
+                          grid-row-end:4;
+                          background-color:tomato;
+                          text-align:center;
+                          padding:10px;
                     }       
                 iframe {border:0px solid black;
                         border-radius:10px;} 
@@ -262,10 +263,10 @@
         <header>
             <div>
                 <a class="menu" href="#" order="0"><img src="images/dog.png" width="60px" title="HOME" alt="hanbin"></a>
-                <a class="menu" href="#" target="main" order="3">STUDY</a>         
+                <a class="menu" href="jabascript.html" target="main" order="3">Javascript</a>         
                 <a class="menu" href="#" target="main" order="2">UI&UX</a> &nbsp;
-                <a class="menu" href="#" target="main" order="1">MOBILE</a>
-                <input class="daynight" type="button" order="4" value="NIGHT" onclick="
+                <a class="menu" href="gallery.html" target="main" order="1">GALLERY</a>
+            <input class="daynight" type="button" order="4" value="NIGHT" onclick="
                     if(document.querySelector('.daynight').value === 'NIGHT'){
                        document.querySelector('body').style.backgroundColor='black';
                        document.querySelector('.daynight').value='DAY';
@@ -309,7 +310,7 @@
                 <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
                 <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
         </div>
-        <div class="banner1">NOTICE</div>
+        <div class="banner1"><a target="main" href="jabascript.html">Javascript</a></div>
         <div class="banner2"><a href=gallery.html target="main">GALLERY</a></div>
         <div class="gallery">
             <a href="gallery.html" target="main">UPDATE HISTORY</a> 
@@ -317,7 +318,7 @@
 </div>         
     <footer>
         <br>
-        <address>last updated 2022.09.01.</address>
+        <address>last updated 2022.09.04.</address>
         <p>made by HANBIN</p>
     </footer>    
 </body>
