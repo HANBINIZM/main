@@ -29,7 +29,14 @@
                         border:0.2em solid #EB1D36;
                         border-radius:5px;
                         margin:0px 0px 0.2em 0em;                
-                        }                      
+                        }
+/* 주야간모드 토글 버튼 */ .daynight {width:20vw; height:10vw;
+                           font:bold 5vw '고딕';
+                           float:right;
+                           margin:2vw 1vw;
+                           border:5px double black;
+                           border-radius:10%;
+                           background-color:yellow;}                                 
                 .menu {text-decoration-line:none; 
                     float:right;     
                     font:bolder 2vw '고딕'; 
@@ -130,9 +137,27 @@
                         background-color:yellow;
                         padding:5px 15px 5px 15px;
                         border-radius:20px;
-                        border:3px solid black;
                         text-decoration-line:none;
+                        border:3px solid black;
                         }
+                /* 주야간모드 토글 버튼 */        
+                .daynight {width:150px; height:120px;
+                        font:bold 5vw '고딕';
+                        float:right;
+                        margin:2vw 1vw;
+                        border:10px double black;
+                        border-radius:5%;
+                        background-color:yellow;
+                        padding:15px;
+                        margin:0px 5px 0px 5px;
+                        font-size:100%;
+                        font-weight: bolder;
+                        text-align:center;
+                        vertical-align:bottom;
+                        text-decoration-line:none;
+                        background-color: white;
+                        border:3px solid black;
+                        border-radius:40px;}         
                 .menu  {float:right;
                         width:80px;
                         height:80px;
@@ -236,11 +261,19 @@
 <body>        
         <header>
             <div>
-                <a class="menu" href="#" order="0"><img src="images/dog.png" width="60px" title="HOME" alt="hanbin"></a>    
-                <a class="menu" href="#" target="main" order="4">ABOUT</a>
+                <a class="menu" href="#" order="0"><img src="images/dog.png" width="60px" title="HOME" alt="hanbin"></a>
                 <a class="menu" href="#" target="main" order="3">STUDY</a>         
                 <a class="menu" href="#" target="main" order="2">UI&UX</a> &nbsp;
-                <a class="menu" href="#" target="main" order="1">MOBILE</a>          
+                <a class="menu" href="#" target="main" order="1">MOBILE</a>
+                <input class="daynight" type="button" order="4" value="NIGHT" onclick="
+                    if(document.querySelector('.daynight').value === 'NIGHT'){
+                       document.querySelector('body').style.backgroundColor='black';
+                       document.querySelector('.daynight').value='DAY';
+                    } else {
+                        document.querySelector('body').style.backgroundColor='skyblue';
+                        document.querySelector('.daynight').value='NIGHT';
+                    }
+                    ">          
             </div>    
         </header>
 <div class="warp">
