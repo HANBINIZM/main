@@ -11,25 +11,24 @@
         /* 모바일 미디어쿼리 */            
         @media screen and (max-width:1000px) {
             a:link{text-decoration:none;}    
-            a:hover{border:1vw double white;
-                    color:white;
+            a:hover{color:white;
                     width:8vw;
                     height:8vw;
                     text-align:center;}
             a:active{background-color:tomato;}
             a:focus{background-color:white;
                     border:1px solid red;}            
-                body {background-color:#F5EDDC;
+            body {background-color:#F5EDDC;
                     }
-                header > div
-                        {display:block;
-                        height:15vw;              
-                        background-color:#CFD2CF;
-                        padding:2%;
-                        border:0.2em solid #EB1D36;
-                        border-radius:5px;
-                        margin:0px 0px 0.2em 0em;                
-                        }
+            header > div
+                    {display:block;
+                    height:15vw;              
+                    background-color:#CFD2CF;
+                    padding:2%;
+                    border:0.2em solid #EB1D36;
+                    border-radius:5px;
+                    margin:0px 0px 0.2em 0em;                
+                    }
 /* 주야간모드 토글 버튼 */ .daynight {width:20vw; height:10vw;
                            font:bold 5vw '고딕';
                            float:right;
@@ -50,7 +49,7 @@
                     background-color:#FA9494;
                     }
                 .menu:first-child {float:left;
-                                display:inline;     
+                                display:inline-block;     
                                 background:none;
                                 border:none;
                                 margin: 0px;
@@ -58,23 +57,24 @@
                                 }
                 .menu>img {width:15vw;}                   
                 form {display:none;}
-                .warp {
+/*모바일 그리드*/.warp {
                     display:grid;
                     background-color:#CFD2CF;
                     border:0.2em solid #EB1D36;
                     border-radius:5px;    
                     grid-template-columns:50% 50%;
-                    grid-template-rows:100vw 40vw 10vw 10vw; 
+                    grid-template-rows:100vw 45vw 10vw 10vw; 
                     }
-                .ad, .aside, .main, .banner1, .banner2, .gallery
+                .ad, .aside, .main, .banner1, .login, .update, .gallery
                     {font:bolder 4vw '명조';
                     text-align:center;
                     text-shadow:3px 3px 3px white;
                     border:3px solid #EB1D36;
                     border-radius:5px;
                     margin:5px;
-                    padding:1px;        
-                        }         
+                    padding:1px;
+                    line-height:-10vw;        
+                    }         
                 .ad {display:none;
                     grid-column-start:1;
                     grid-column-end:2; 
@@ -88,6 +88,7 @@
                     grid-row-start:2;
                     grid-row-end:3;
                     background-color:#FA9494;
+                    padding:20px;
                 }
                 .main {
                     padding:2vw;
@@ -101,16 +102,24 @@
                     grid-column-start:1;
                     grid-column-end:2;
                     grid-row-start:3;
-                    grid-row-end:4;  
+                    grid-row-end:4;
+                    background-color: #FA9494;
                 }
-                .banner2 {
+                .update {
                     grid-column-start:2;
                     grid-column-end:3;
                     grid-row-start:3;
                     grid-row-end:4;
+                    background-color: #FA9494;
                 }
+                .login {grid-column-start:1;
+                        grid-column-end:2;
+                        grid-row-start:4;
+                        grid-row-end:5;
+                        background-color:greenyellow;
+                         }     
                 .gallery {
-                    grid-column-start:1;
+                    grid-column-start:2;
                     grid-column-end:3;
                     grid-row-start:4;
                     grid-row-end:5;
@@ -118,7 +127,8 @@
                     background-color:tomato;
                 }
                 .gallery>img {width:30px;}                           
-                footer {color:black}  
+                footer {color:black;
+                        text-align:center;}  
     }               
         /* PC 미디어쿼리 */     
         @media screen and (min-width:1001px){ 
@@ -182,10 +192,10 @@
                 form   {font-weight:bold;
                         padding:0px;
                         height:40px;       
-                        display:inline;
+                        display:inline-block;
                         text-align:center;
                         }
-                fieldset {display:inline;
+                fieldset {display:inline-block;
                         height:50px;
                         font-size:10px;
                         vertical-align:center;
@@ -194,9 +204,9 @@
                         font-weight:bolder;
                         padding:5px;
                         }            
-                .warp {display:grid;
+ /*그리드*/     .warp {display:grid;
                     grid-template-columns:24% 38% 38%;
-                    grid-template-rows:100px 500px 100px;
+                    grid-template-rows:100px 35vw 100px;
                     
                     }        
                 .warp > div {border:3px solid black;
@@ -212,7 +222,7 @@
                     grid-row-start:1;
                     grid-row-end:3;
                     background-color:skyblue;}
-                .banner1, .banner2, .gallery {visibility:hidden;}              
+                .banner1, .banner2, .login, .update, .gallery {opacity:10%;}              
                 .ad {grid-column-start:1;
                     grid-column-end:2;
                     grid-row-start:1;
@@ -226,6 +236,7 @@
                         grid-column-end:2;
                         grid-row-start:2;
                         grid-row-end:3;
+                        color:black;
                         background-color:silver;}
                 .aside:first-line
                         {font-size:150%;
@@ -238,12 +249,12 @@
                         grid-row-end:4;
                         background-color:greenyellow;
                         }       
-                .banner2{grid-column-start:3;
+                .update {grid-column-start:3;
                         grid-column-end:4;
                         grid-row-start:3;
                         grid-row-end:4;
                         background-color:tomato;
-                        }                         
+                        }                            
                 .gallery {grid-column-start:1;
                           grid-column-end:2;
                           grid-row-start:3;
@@ -262,13 +273,14 @@
 <body>        
         <header>
             <div>
-                <a class="menu" href="#" order="0"><img src="images/dog.png" width="60px" title="HOME" alt="hanbin"></a>
+                <a class="menu" href="index.html" order="0"><img src="images/dog.png" width="60px" title="HOME" alt="hanbin"></a>
                 <a class="menu" href="jabascript.html" target="main" order="3">Javascript</a>         
-                <a class="menu" href="#" target="main" order="2">UI&UX</a> &nbsp;
+                <a class="menu" href="style.html" target="main" order="2">UI&UX</a>
                 <a class="menu" href="gallery.html" target="main" order="1">GALLERY</a>
             <input class="daynight" type="button" order="4" value="NIGHT" onclick="
                     if(document.querySelector('.daynight').value === 'NIGHT'){
                        document.querySelector('body').style.backgroundColor='black';
+                       document.querySelector('body').style.color='yellow';
                        document.querySelector('.daynight').value='DAY';
                     } else {
                         document.querySelector('body').style.backgroundColor='skyblue';
@@ -279,8 +291,8 @@
         </header>
 <div class="warp">
         <div class="main">
-            <iframe name="main" width="100%" height="100%">
-               
+            <iframe src="home.html" name="main" width="100%" height="100%">
+             
            </iframe>
         </div>
         <div class="ad">
@@ -301,7 +313,6 @@
             </form>
         </div>
         <div class="aside">
-            FAVORITE<br>
                 <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
                 <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
                 <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
@@ -309,16 +320,19 @@
                 <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
                 <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
                 <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
+                <a href="https://license.kpc.or.kr/nasec/qlfint/qlfint/selectGtqinfomg.do" target="_blank"><b>GTQ</b></a>
         </div>
-        <div class="banner1"><a target="main" href="jabascript.html">Javascript</a></div>
-        <div class="banner2"><a href=gallery.html target="main">GALLERY</a></div>
-        <div class="gallery">
-            <a href="gallery.html" target="main">UPDATE HISTORY</a> 
+            <div class="banner1"><a target="main" href="jabascript.html">Javascript</a></div>
+            <div class="update"><a href="#" target="main">UPDATE HISTORY</a></div>
+            <div class="login">
+                <a href="#" target="main">LOG-IN</a></div>
+            <div class="gallery">
+                <a href="gallery.html" target="main">GALLERY</a></div>    
         </div>
 </div>         
     <footer>
         <br>
-        <address>last updated 2022.09.04.</address>
+        <address>last updated 2022.09.05.</address>
         <p>made by HANBIN</p>
     </footer>    
 </body>
