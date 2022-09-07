@@ -7,25 +7,33 @@
      initial-scale="1" minimum-scale="1", maximum-scale="1">
     <title>GALLERY</title>
     <style>
-        a:hover {width:110%;}
          @media screen and (max-width:800px) {
+            a:link {}
+            a:hover {width:110%;}
+            a:active {}
+            a:focus {}
             body {background-color:yellowgreen;}
             div {text-align:center;}
-            div > img {width:200px;
-                    display:inline-block;
-                    margin:5px;
-                   }
+            img {width:200px;
+                       height:200px;
+                       display:inline-block;
+                       margin:5px;
+                      }
         }
         @media screen and (min-width:801px) {
+            a:link {}
+            a:hover {width:110%;}
+            a:active {}
+            a:focus {}
             body {background-color:skyblue;}
             div {text-align:center;
                 vertical-align:middle;} 
-            div > img {width:30vw;
-                       height:30vw;
-                    border:1px solid black;
-                    margin:10px;
-
-                    }   
+            img {width:200PX;
+                       height:200PX;
+                       display:inline;
+                       border:1px solid black;
+                       margin:10px;
+                        }   
         }
     </style>    
 </head>
