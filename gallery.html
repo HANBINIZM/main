@@ -2,24 +2,45 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+     content="width=device-width", 
+     initial-scale="1" minimum-scale="1", maximum-scale="1">
+    <title>GALLERY</title>
     <style>
-        body {background-color:#F5EDDC;
-             text-align:center;}
-        div > img {width:20em;
+         @media screen and (max-width:800px) {
+            body {background-color:yellowgreen;}
+            div {text-align:center;}
+            div > img {width:200px;
+                    display:inline-block;
+                    margin:5px;
                    }
+        }
+        @media screen and (min-width:801px) {
+            body {background-color:skyblue;}
+            div {text-align:center;
+                vertical-align:middle;} 
+            div > img {width:30vw;
+                       height:30vw;
+                    border:1px solid black;
+                    margin:10px;
+
+                    }   
+        }
     </style>    
 </head>
 <body>
     <div>
         <img src="images/dog.png" alt="dog" title="dog">
-        <img src="images/dogi.png" alt="dogi" title="dogi">
         <img src="images/wedding.png" alt="wedding" title="wedding">
         <img src="images/game.png" alt="dice" title="dice">
         <img src="images/office.png" alt="office" title="office">
         <img src="images/smoking.png" alt="smoke" title="smoke">
+        <img src="images/220905_1.png" alt="gimbob" title="김밥">
+        <img src="images/220905_2.png" alt="food" title="푸드">
+        <img src="images/220905_3.png" alt="fish" title="물고기">
+        <img src="images/laundry.png" alt="laundry" title="세탁기">
+        <img src="images/clean.png" alt="clean" title="청소">
+        <img src="images/soap.png" alt="soap" title="soap"> 
     </div>    
 </body>
 </html>
