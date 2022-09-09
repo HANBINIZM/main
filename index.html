@@ -65,7 +65,7 @@
                     border:0.2em solid #EB1D36;
                     border-radius:5px;    
                     grid-template-columns:50% 50%;
-                    grid-template-rows:100vw 25%; 10vw 10vw; 
+                    grid-template-rows:50em 25vw 10vw 10vw; 
                     }
                 .ad, .aside, .main, .banner1, .login, .update, .gallery
                     {font:bolder 4vw '명조';
@@ -92,6 +92,7 @@
                     background-color:#FA9494;
                     padding:20px;
                 }
+                .aside a img {width:50px;}
                 .main {
                     padding:0;
                     grid-column-start:1;
@@ -127,10 +128,9 @@
                     grid-row-end:5;
                     text-align:center;
                     background-color:tomato;
-                }
-                .gallery>img {width:30px;
-                              vertical-align:middle;}                           
-                footer {color:black;
+                }                           
+                footer {display:block;
+                        color:black;
                         text-align:center;}  
     }               
         /* PC 미디어쿼리 */     
@@ -241,6 +241,7 @@
                         grid-row-end:3;
                         color:black;
                         background-color:silver;}
+                .aside a img {width:50px;}        
                 .aside:first-line
                         {font-size:150%;
                         font-weight:bolder;
@@ -271,8 +272,25 @@
                 footer {text-align:center;}
         }   
     </style>
+    <script>
+        function toggle(change) {
+            var target = document.querySelector('body')
+                if (change.value === 'NIGHT'){
+                    target.style.backgroundColor='black';
+                    target.style.color='white';
+                    target.style.fontWeight='normal';
+                    target.style.fontStyle='normal';
+                    change.value='DAY';
+                    } else {
+                    target.style.backgroundColor='skyblue';
+                    target.style.color='red';
+                    target.style.fontWeight='bolder';
+                    target.style.fontStyle='italic';
+                    change.value='NIGHT';
+                    }
+        }
+    </script>
 </head>
-
 <body>        
         <header>
             <div>
@@ -281,14 +299,7 @@
                 <a class="menu" href="style.html" target="main" order="2">UI&UX</a>
                 <a class="menu" href="gallery.html" target="main" order="1">GALLERY</a>
             <input class="daynight" type="button" order="4" value="NIGHT" onclick="
-                    if(document.querySelector('.daynight').value === 'NIGHT'){
-                       document.querySelector('body').style.backgroundColor='black';
-                       document.querySelector('body').style.color='yellow';
-                       document.querySelector('.daynight').value='DAY';
-                    } else {
-                        document.querySelector('body').style.backgroundColor='skyblue';
-                        document.querySelector('.daynight').value='NIGHT';
-                    }
+                    toggle(this);
                     ">          
             </div>    
         </header>
@@ -316,13 +327,14 @@
             </form>
         </div>
         <div class="aside">
-                <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum" width="50px"></a>
-                <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo" width="50px"></a>
-                <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple" width="50px"></a>
-                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt" width="50px"></a><br>
-                <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta" width="50px"></a>
-                <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t" width="50px"></a>
-                <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather" width="50px"></a>
+                <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum"></a>
+                <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo"></a>
+                <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple"></a>
+                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt"></a><br>
+                <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta"></a>
+                <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t"></a>
+                <a href="http://github.com" target="_blank"><img src="images/github.png" alt="github"></a>
+                <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather"></a>
                 <a href="https://license.kpc.or.kr/nasec/qlfint/qlfint/selectGtqinfomg.do" target="_blank"><b>GTQ</b></a>
         </div>
             <div class="banner1"><a target="main" href="jabascript.html">Javascript</a></div>
@@ -335,8 +347,8 @@
 </div>         
     <footer>
         <br>
-        <address>last updated 2022.09.07.</address>
-        <p>made by HANBIN</p>
+        <address>last updated 2022.09.09.</address>
+        <p>made by HANBIN. powered by GITHUB</p>
     </footer>    
 </body>
 </html> 
