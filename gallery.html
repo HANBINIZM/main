@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW HOMPAGE</title>
     <style>
-         /* 아이폰13미니 미디어쿼리 */            
-    @media screen and (max-width:1000px) {
+         /* 아이폰13미니 미디어쿼리 {} */           
+    @media screen and (max-width:1000px) 
         a:link{text-decoration:none;}    
         a:hover{color:white;
                 }
@@ -18,7 +18,7 @@
               padding:1vw 1vw;
               background-color:black;}
       
-        header {background-color:lime;
+        header {background-color:#fbdf07;
                 border-radius:1em;
                 width:93vw;
                 height:10vh;
@@ -27,7 +27,7 @@
                 display:inline-block;
                 padding:2vw 0vw 0vw 2vw;
                 }
-        header img {width:8vw;
+        header img {width:8vh;
                     display:inline-block;}        
         div {box-sizing:border-box;
             background-color:powderblue;
@@ -37,17 +37,18 @@
             border-radius:1em;
             display:inline-block;
             text-align:center;}                      
-        .container 
-        {background-color:powderblue;
-        }
-        .container img {width:40vw; height:40vw;
-                        border:1px solid black}
+        .container {box-sizing:border-box;
+                    display:inline-block;
+                    background-color:powderblue;
+                    padding-bottom: 1em;  
+                    }
         .container .link {box-sizing:border-box;
                           margin-top:1em;
-                          margin-bottom:0.5em;
+                          margin-bottom:1em;
                           width:92vw;
                           height:20vh;
-                          background-color:white;}                                     
+                          background-color:white;}   
+        .container .link img {width:8vh;}                                                                                            
         footer {box-sizing: border-box;
                 background-color:silver;
                 border:0px solid black;
@@ -55,8 +56,7 @@
                 margin: 1vh 0vw 0vh;
                 text-align: center;
                 border-radius:1em;
-                }        
-        }
+                }
     </style>
 </head>
 <body>
@@ -64,33 +64,27 @@
        <a href="index.html"><img src="images/dog.png" alt="dog"> </a>
     </header>
     <div class="container">
-    <!-- 여기에 본문 내용 입력하세요. -->
-    <a href="images/dog.png" target="_blank"><img src="images/dog.png" alt="dog" title="dog"></a>
-    <a href="images/rabbit.png" target="_blank"><img src="images/rabbit.png" alt="rabbit" title="rabbit"></a>
-    <a href="images/wedding.png" target="_blank"><img src="images/wedding.png" alt="wedding" title="wedding"></a>
-    <a href="images/game.png" target="_blank"><img src="images/game.png" alt="dice" title="dice"></a>
-    <a href="images/office.png" target="_blank"><img src="images/office.png" alt="office" title="office"></a>
-    <a href="images/smoking.png" target="_blank"><img src="images/smoking.png" alt="smoke" title="smoke"></a>
-    <a href="images/220905_1.png" target="_blank"><img src="images/220905_1.png" alt="gimbob" title="김밥"></a>
-    <a href="images/220905_2.png" target="_blank"><img src="images/220905_2.png" alt="food" title="푸드"></a>
-    <a href="images/220905_3.png" target="_blank"><img src="images/220905_3.png" alt="fish" title="물고기"></a>
-    <a href="images/laundry.png" target="_blank"><img src="images/laundry.png" alt="laundry" title="세탁기"></a>
-    <a href="images/clean.png" target="_blank"><img src="images/clean.png" alt="clean" title="청소"></a>
-    <a href="images/soap.png" target="_blank"><img src="images/soap.png" alt="soap" title="soap"></a>
-    <a href="images/beach.png" target="_blank"><img src="images/beach.png" alt="beach" title="beach"></a>
-    <a href="images/sand.png" target="_blank"><img src="images/sand.png" alt="sand" title="sand"></a>
-    <a href="images/tube.png" target="_blank"><img src="images/tube.png" alt="tube" title="tube"></a>
-    <a href="images/beach.jpg" target="_blank"><img src="images/beach.jpg" alt="beach" title="beach"></a>
-    <a href="images/cowboy.jpg" target="_blank"><img src="images/cowboy.jpg" alt="cowboy" title="beach"></a>
-    <a href="images/mango.jpg" target="_blank"><img src="images/mango.jpg" alt="mango" title="beach"></a>
-    <a href="images/onion.jpg" target="_blank"><img src="images/onion.jpg" alt="onion" title="beach"></a>
+    <!-- 여기에 본문 내용 넣으세요. -->
+        <h1>UPDATE-HISTORY</h1>
+        <a href="h220910.html" target="_blank"><h2>22년 8월</h1></a>
+
     
-        <div class="link">HELLO</div>
+        <div class="link">
+            <div class="link">
+                <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum"></a>
+                <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo"></a>
+                <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple"></a>
+                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt"></a><br>
+                <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta"></a>
+                <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t"></a>
+                <a href="http://github.com" target="_blank"><img src="images/github.png" alt="github"></a>
+                <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather"></a>
+            </div>
+        </div>
     </div>       
     <footer>
         <br>
         <address>last updated 2022.09.15.</address>
-        <br>
         MADE BY HANBIN // powered by github
     </footer>   
 </body>
