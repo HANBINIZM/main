@@ -10,7 +10,7 @@
                 border:1px solid red;}            
         body {box-sizing:border-box;
               background-color:#f94892;}
-        header {background-color:#fbdf07;
+        header {background-color:#89cffd;;
                 border-radius:1em;
                 width:93vw;
                 height:10vh;
@@ -54,7 +54,8 @@
                           height:20vh;
                           background-color:#89cffd;}
         .container .link img {width:8vh;
-                              height:8vh;}                                                       
+                              height:8vh;
+                              border:none;}                                                       
         footer {box-sizing: border-box;
                 background-color:silver;
                 border:0px solid #f94892;
