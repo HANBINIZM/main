@@ -1,0 +1,66 @@
+@charset "utf-8"
+         /* 아이폰13미니 미디어쿼리             
+    @media screen and (max-width:1000px){} */ 
+        a:link{text-decoration:none;
+               color:black;}    
+        a:hover{color:white;
+                }
+        a:active{background-color:#f94892;}
+        a:focus{background-color:#89cffd;
+                border:1px solid red;}            
+        body {box-sizing:border-box;
+              background-color:#f94892;}
+        header {background-color:#fbdf07;
+                border-radius:1em;
+                width:93vw;
+                height:10vh;
+                line-height:10vh;
+                margin-bottom:1vh;
+                display:inline-block;
+                padding:2vw 0vw 0vw 2vw;
+                }
+        header img {width:8vh;
+                    display:inline-block;}        
+        div {box-sizing:border-box;
+            background-color:#ff7f3f;
+            width:95vw;
+            border:0px solid #f94892;
+            padding:1vw 0vw 1vw;
+            border-radius:1em;
+            display:inline-block;
+            text-align:center;}                      
+        .container {box-sizing:border-box;
+                    display:inline-block;}
+        .container a img {width:30vw;
+                          height:30vw;
+                          border:1px solid black;}            
+        .container .menu {width:45vw;
+                          height: 35vw;
+                          box-sizing:border-box;
+                          display:inline-block;
+                          background-color:#fbdf07;
+                          border:0px solid #f94892;
+                          border-radius:1em;
+                          margin: 0.5vw;
+                          padding:1vw;
+                          font-size:1em;
+                          font-weight:bolder;
+                          line-height:35vw;}
+        .container .link {box-sizing:border-box;
+                          display:inline-block;
+                          margin-top:0.5em;
+                          margin-bottom:0.5em;
+                          width:92vw;
+                          height:20vh;
+                          background-color:#89cffd;}
+        .container .link img {width:8vh;
+                              height:8vh;}                                                       
+        footer {box-sizing: border-box;
+                background-color:silver;
+                border:0px solid #f94892;
+                width:95vw; height:15vh;
+                margin: 1vh 0vw 0vh;
+                padding-bottom:1em;
+                text-align: center;
+                border-radius:1em;
+                }
