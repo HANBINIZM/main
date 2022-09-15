@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW HOMPAGE</title>
     <style>
-         /* 아이폰13미니 미디어쿼리 {} */           
-    @media screen and (max-width:1000px) 
-        a:link{text-decoration:none;}    
+         /* 아이폰13미니 미디어쿼리             
+    @media screen and (max-width:1000px){} */ 
+        a:link{text-decoration:none;
+               color:black;}    
         a:hover{color:white;
                 }
-        a:active{background-color:tomato;}
-        a:focus{background-color:white;
+        a:active{background-color:#f94892;}
+        a:focus{background-color:#89cffd;
                 border:1px solid red;}            
         body {box-sizing:border-box;
-              padding:1vw 1vw;
-              background-color:black;}
-      
+              background-color:#f94892;}
         header {background-color:#fbdf07;
                 border-radius:1em;
                 width:93vw;
@@ -30,30 +29,41 @@
         header img {width:8vh;
                     display:inline-block;}        
         div {box-sizing:border-box;
-            background-color:powderblue;
+            background-color:#ff7f3f;
             width:95vw;
-            border:0px solid black;
+            border:0px solid #f94892;
             padding:1vw 0vw 1vw;
             border-radius:1em;
             display:inline-block;
             text-align:center;}                      
         .container {box-sizing:border-box;
-                    display:inline-block;
-                    background-color:powderblue;
-                    padding-bottom: 1em;  
-                    }
+                    display:inline-block;}
+        .container .menu {width:45vw;
+                          height: 35vw;
+                          box-sizing:border-box;
+                          display:inline-block;
+                          background-color:#fbdf07;
+                          border:0px solid #f94892;
+                          border-radius:1em;
+                          margin: 0.5vw;
+                          padding:1vw;
+                          font-size:1em;
+                          font-weight:bolder;
+                          line-height:35vw;}
         .container .link {box-sizing:border-box;
-                          margin-top:1em;
-                          margin-bottom:1em;
+                          display:inline-block;
+                          margin-top:0.5em;
+                          margin-bottom:0.5em;
                           width:92vw;
                           height:20vh;
-                          background-color:white;}   
-        .container .link img {width:8vh;}                                                                                            
+                          background-color:#89cffd;}
+        .container .link img {width:8vh;}                                                       
         footer {box-sizing: border-box;
                 background-color:silver;
-                border:0px solid black;
+                border:0px solid #f94892;
                 width:95vw; height:15vh;
                 margin: 1vh 0vw 0vh;
+                padding-bottom:1em;
                 text-align: center;
                 border-radius:1em;
                 }
@@ -64,22 +74,19 @@
        <a href="index.html"><img src="images/dog.png" alt="dog"> </a>
     </header>
     <div class="container">
-    <!-- 여기에 본문 내용 넣으세요. -->
-        <h1>UPDATE-HISTORY</h1>
-        <a href="h220910.html" target="_blank"><h2>22년 8월</h1></a>
-
-    
+            <a target="_self" href="jabascript.html"><div class="menu">Javascript</div></a>
+            <a href="style.html" target="_self"><div class="menu">UI&UX</div></a>
+            <a href="history.html" target="_self"><div class="menu">UPDATE-HISTORY</div></a>
+            <a href="gallery.html" target="_self"><div class="menu">GALLERY</div></a>
         <div class="link">
-            <div class="link">
-                <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum"></a>
-                <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo"></a>
-                <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple"></a>
-                <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt"></a><br>
-                <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta"></a>
-                <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t"></a>
-                <a href="http://github.com" target="_blank"><img src="images/github.png" alt="github"></a>
-                <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather"></a>
-            </div>
+            <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum"></a>
+            <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo"></a>
+            <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple"></a>
+            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt"></a><br>
+            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta"></a>
+            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t"></a>
+            <a href="http://github.com" target="_blank"><img src="images/github.png" alt="github"></a>
+            <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather"></a>
         </div>
     </div>       
     <footer>
