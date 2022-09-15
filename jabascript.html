@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자바스크립트 연습</title>
+    <script>
+    /*    var age = prompt('나이를 입력하세요','');
+        var charge = '';
+        if (age < 13){
+            charge = '1,000원'
+        } else if(age >= 13 && age < 20) { 
+            charge = '2,000원'
+        } else {charge = '3,000원'}
+         
+        document.write(charge); */ 
+       </script>
+       <link href="styles/style0915.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="images/dog.png" alt="dog"> </a>
+     </header>
     <h1>Javascript operation & boolean</h1>
+    <div class="container">    
         <hr noshade><br>
             <input type="button" value="night" onclick="
                 var target= document.querySelector('body');
@@ -76,7 +92,79 @@
                         }
                     document.write("4<br>");
                 </script>
-            <hr noshade>    
-                
+    <hr noshade>    
+        <h1>함수</h1> 
+            <ul>
+                <script>
+                    function two () {
+                        document.write('<li>2-1</li>');
+                        document.write('<li>2-2</li>');
+                    }
+                        document.write('<li>1</li>');
+                            two();
+                        document.write('<li>2</li>');
+                            two();
+                </script>
+            </ul>
+        <h2>매개변수와 인자. Parameter & Argument </h2>
+            <script>
+                function plus (){
+                    document.write(1+1+'<br>');
+                }
+                function oneone (left, right) {
+                    document.write(left+right+'<br>');
+                }
+                function red(left, right) {
+                    document.write('<span style="font-size:20px; color:red;">'+
+                        left+right+'</span><br>');
+                }
+                plus()
+                red(1,9);    
+                oneone (2,3);
+                oneone (10,5);   
+            </script>
+        <h2>Return</h2>
+            <script>
+                function sum(left, right){
+                    document.write('<div style="color:red">'+left+right+'</div><br>');
+                }
+            sum(2,3);
+            sum(5,10);
+            sum(3,4)    
+            </script>
+    <hr>                
+            <script>
+                function sum2(left, right){
+                    return left+right;
+                }
+                document.write(sum2(2,3)+'<br>');
+                document.write('<span style="color:blue; font-size:2em;">'+sum2(2,3)+'</span><br>')                
+            </script>
+    <hr noshade>
+        <input id="togg" type="button" value="moon" onclick="
+       if (document.querySelector('#togg').value === 'moon'){
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='yellow';
+            document.querySelector('#togg').value = 'sun';
+       }else{
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('#togg').value =';}      
+       ">
+    <hr noshade>
+       <script>
+            function kei() {
+                var x = 10;
+                var y = 20;
+                var result = x / y;
+                console.log(result);
+        } kei();
+       </script>
+    </div>   
+           <footer>
+            <br>
+            <address>last updated 2022.09.15.</address>
+            MADE BY HANBIN // powered by github
+        </footer>
 </body>
 </html>
