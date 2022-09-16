@@ -59,10 +59,10 @@
                               border:none;}                                                       
         footer {box-sizing: border-box;
                 background-color:silver;
-                border:0px solid #f94892;
+                border:0px;
                 width:95vw; height:10vh;
                 margin: 1vh 0vw 0vh;
-                padding:1em 0em;
+                padding:0em;
                 text-align: center;
                 border-radius:1em;
                 }
