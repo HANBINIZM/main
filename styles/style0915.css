@@ -2,12 +2,17 @@
          /* 아이폰13미니 미디어쿼리             
     @media screen and (max-width:1000px){} */ 
         a:link{text-decoration:none;
-               color:black;}    
-        a:hover{color:white;
+               color:black;}
+        a:hover{font-size:150%;
+                letter-spacing:1.5;
+                font-weight:bolder;
                 }
-        a:active{background-color:#f94892;}
-        a:focus{background-color:#89cffd;
-                border:1px solid red;}            
+        .menu:hover {background-color:sliver;}        
+        a:visited {color:blue;}        
+        .menu:hover {background-color:black;}                       
+        .menu:hover{color:white;
+                background-color:black;
+                }
         body {box-sizing:border-box;
               background-color:#f94892;}
         header {background-color:#89cffd;;
@@ -19,7 +24,7 @@
                 display:inline-block;
                 padding:2vw 0vw 0vw 2vw;
                 }
-        header img {width:8vh;
+        header img {width:10vh;
                     display:inline-block;}        
         div {box-sizing:border-box;
             background-color:#ff7f3f;
@@ -39,10 +44,10 @@
                           box-sizing:border-box;
                           display:inline-block;
                           background-color:#fbdf07;
-                          border:0px solid #f94892;
                           border-radius:1em;
                           margin: 0.5vw;
                           padding:1vw;
+                          transition:all 1s;
                           font-size:1em;
                           font-weight:bolder;
                           line-height:35vw;}
@@ -52,17 +57,16 @@
                           margin-bottom:0.5em;
                           width:92vw;
                           height:20vh;
-                          padding:2vh;
                           background-color:#89cffd;}
         .container .link img {width:8vh;
                               height:8vh;
                               border:none;}                                                       
         footer {box-sizing: border-box;
                 background-color:silver;
-                border:0px;
-                width:95vw; height:10vh;
+                border:0px solid #f94892;
+                width:95vw; height:15vh;
                 margin: 1vh 0vw 0vh;
-                padding:0em;
+                padding:1em 0em;
                 text-align: center;
                 border-radius:1em;
                 }
