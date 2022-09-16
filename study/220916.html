@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>220916</title>
+    <style>
+        a:hover {border:5px groove white;}
+        input textarea select {-webkit-appearance: none;
+                              border: 1px solid #ccc}
+        * {font-size: 120%;}
+        .memo1 {background-color:silver;
+                border:5px solid red;
+                resize:horizontal;
+                overflow:auto;}
+        .memo2 {box-sizing:border-box;
+                width:500px;
+                background-color:powderblue;
+                border:5px solid blue;
+                resize:vertical;
+                padding:20px;}
+        div {
+           width:500px;
+           overflow:hidden;
+           }    
+        div img {width:500px;
+            border:5px solid black;
+            transition:all 0.4s;}
+        div img:hover {border:10px groove white;
+                       transform:scale(1.2,1.2);
+        }
+        p {background-color:black;
+           color:white;}
+        .menu1 {transform:translate(30px,30px);}
+        .menu2 {transform:scale(0.7,0.9);}
+        .menu3 {transform:rotate(30deg);}
+        .menu4 {transform:skew(6deg,-30deg);}
+        h1 {text-align: center;}
+        ul li {list-style-type:none;
+               display:block;
+               text-align:center;
+            }
+        ul li a {text-decoration:none;
+                 display:block;
+                 background-color:powderblue;
+                 box-sizing:border-box;
+                 width:250px;
+                 margin-top:5px;
+                 padding:5px;
+                 transition:width 2s, color 1s;
+                 text-align:center;
+                 text-indent:10px;
+                }
+        ul li a:hover
+                {background-color:red;
+                color:white;
+                border:0;
+                letter-spacing:0.1em;
+                text-align:right;
+                width:90vw;}           
+            
+    </style>
+</head>
+<body>
+    <h1>moving menu</h1>
+        <ul class>
+            <li><a href="#">company</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">board</a></li>
+        </ul>
+<br><br><br><br>
+
+
+    
+    
+    
+    
+    
+    
+    <p class="menu1">오른쪽 30, 밑으로 30</p> 
+    <p class="menu2">크기 70%, 90%</p>
+    <p class="menu3">회전 30%</p>
+    <p class="menu4">찌그러짐</p>   
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ullam debitis delectus, voluptatibus sit, fugit nemo nostrum ut nulla porro quisquam quidem similique alias! Fugiat quo alias ex neque adipisci.</div>
+    <textarea class="memo1" cols="80" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id iure accusamus eligendi deleniti explicabo ipsum dolore dolorum est numquam doloremque aspernatur, architecto quaerat, ab facere praesentium voluptate ipsam a.</textarea>
+    <textarea class="memo2" cols="80" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aut. Eum, perspiciatis optio! Inventore illo nostrum repellat porro facilis neque atque, aliquid ut eligendi culpa nihil explicabo perspiciatis architecto repellendus?</textarea>
+    <div class="t1"><img src="../images/cowboy.jpg" alt="카우보이">
+    
+</body>
+</html>
