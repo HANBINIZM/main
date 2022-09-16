@@ -52,6 +52,7 @@
                           margin-bottom:0.5em;
                           width:92vw;
                           height:20vh;
+                          padding:2vh;
                           background-color:#89cffd;}
         .container .link img {width:8vh;
                               height:8vh;
@@ -59,7 +60,7 @@
         footer {box-sizing: border-box;
                 background-color:silver;
                 border:0px solid #f94892;
-                width:95vw; height:15vh;
+                width:95vw; height:10vh;
                 margin: 1vh 0vw 0vh;
                 padding:1em 0em;
                 text-align: center;
