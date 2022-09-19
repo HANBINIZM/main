@@ -3,15 +3,15 @@
     @media screen and (max-width:1000px){} */ 
         a:link{text-decoration:none;
                color:black;}
-        a:hover{font-size:150%;
+       /* a:hover{font-size:150%;
                 letter-spacing:1.5;
                 font-weight:bolder;
-                }
+                } */
         .menu:hover {background-color:sliver;}        
-        a:visited {color:blue;}        
-        .menu:hover {background-color:black;}                       
-        .menu:hover{color:white;
+        a:visited {color:blue;}                               
+        .container a .menu:hover{color:white;
                 background-color:black;
+                font-size:120%;
                 }
         body {box-sizing:border-box;
               background-color:#f94892;}
@@ -35,7 +35,8 @@
             display:inline-block;
             text-align:center;}                      
         .container {box-sizing:border-box;
-                    display:inline-block;}
+                    display:inline-block;
+                    padding-bottom:1vh;}
         .container a img {width:30vw;
                           height:30vw;
                           border:1px solid black;}            
@@ -54,7 +55,7 @@
         .container .link {box-sizing:border-box;
                           display:inline-block;
                           margin-top:0.5em;
-                          margin-bottom:0.5em;
+                          margin-bottom:1em;
                           width:92vw;
                           height:20vh;
                           background-color:#89cffd;}
