@@ -4,33 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEW HOMPAGE</title>
-    <link href="styles/style0915.css" rel="stylesheet" type="text/css"> 
+    <title>220918</title>
+    <style>
+        body {margin:3vh;}
+        a:link {color:white;
+                text-decoration:none;}
+        header ul li div:hover {background-color:white;
+                                color:black;
+                                font-weight:bolder;
+                                letter-spacing:10px;} 
+        a:visited {color:white;}
+        a:focus {}
+        header {width:95vw;
+                height:10vh;
+                background-color:tomato;
+                border:5px outset blueviolet;
+                box-sizing:border-box;
+                padding:1vh;
+                padding-bottom:10;
+                line-height:0vh;
+                display:block;
+                }
+        header div img {width:3vw;
+                        height:3vw;
+                        float:left;}
+        header ul {display:inline;
+                   list-style-type:none;
+                    }
+        header ul li div {display:inline-block;
+                      background-color:black;
+                      line-height:4vh;
+                      margin:1vh 1vh;
+                      box-sizing:border-box;
+                      font-weight:bolder;
+                      float:right;;
+                      width:15%;
+                      height:4vh;
+                      transition: all 1s;
+                      text-align:center;}                                                        
+        .container {box-sizing:border-box;
+                    width:95vw;
+                    height:80vh;
+                    margin:0.1vw 0;
+                    }
+        .container .main {box-sizing:border-box;
+                         float:left;
+                         margin:0.5vw 0.5vw 0 0;
+                         border:5px solid black;
+                         width:79.5vw;
+                         height:80vh;
+                         background-color:skyblue;}            
+        .container .side {box-sizing:border-box;
+                          float:right;
+                          margin:0.5vw 0;
+                          border:5px solid black;
+                          width: 15vw;
+                          height: 80vh;
+                          background-color:goldenrod;}            
+        footer {width:95vw;
+                height:10vh;
+                margin-top:1vw;
+                background-color:silver;
+                border:5px groove black;
+                box-sizing:border-box;
+                text-align:center;
+                line-height:8vh;}            
+    </style>    
 </head>
 <body>
     <header>
-       <a href="index.html"><img src="images/dog.png" alt="dog"> </a>
-    </header>
-    <div class="container">
-            <a href="jabascript.html" target="_self"><div class="menu">Javascript</div></a>
-            <a href="style.html" target="_self"><div class="menu">UI&UX</div></a>
-            <a href="history.html" target="_self"><div class="menu">UPDATE-HISTORY</div></a>
-            <a href="gallery.html" target="_self"><div class="menu">GALLERY</div></a>
-        <div class="link">
-            <a href="http://daum.net" target="_blank"><img src="images/daum.png" alt="daum"></a>
-            <a href="http://yahoo.co.jp" target="_blank"><img src="images/yahoo.png" alt="yahoo"></a>
-            <a href="http://apple.com/kr" target="_blank"><img src="images/apple.png" alt="apple"></a>
-            <a href="http://twitter.com/hanbinizm" target="_blank"><img src="images/twitter.png" alt="twt"></a><br>
-            <a href="http://instagram.com/hanbinizm" target="_blank"><img src="images/insta.png" alt="insta"></a>
-            <a href="http://hanbinizm.tistory.com" target="_blank"><img src="images/t.png" alt="t"></a>
-            <a href="http://github.com" target="_blank"><img src="images/github.png" alt="github"></a>
-            <a href="https://www.weather.go.kr/w/index.do" target="_blank"><img src="images/weather.png" alt="weather"></a>
+        <div>
+            <img src="images/dog.png">
+            <ul>
+                <li><a href="#" target="_blank"><div class="list">GALLERY</div></a></li>
+                <li><a href="#" target="_blank"><div class="list">javascript</div></a></li>
+                <li><a href="#" target="_blank"><div class="list">histoty</div></a></li>
+                <li><a href="#" target="_blank"><div class="list">UI&UX</div></a></li>
+            </ul>
         </div>
-    </div>       
+    </header>
+        <div class="container">
+            <div class="main">
+                <!-- 본문 시작 -->
+
+                <!-- 본문 끝 -->
+            </div>
+            <div class="side">
+
+            </div>
+    </div>
     <footer>
-        <br>
-        <address>last updated 2022.09.16.</address>
-        MADE BY HANBIN // powered by github
-    </footer>   
+        MADE BY HANBIN
+    </footer>
 </body>
 </html>
