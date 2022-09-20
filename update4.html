@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+         /* 아이폰13미니 미디어쿼리 */            
+    @media screen and (max-width:1000px) {
+        a:link{text-decoration:none;}    
+        a:hover{color:white;
+                }
+        a:active{background-color:tomato;}
+        a:focus{background-color:white;
+                border:1px solid red;}            
+        body {box-sizing:border-box;
+              padding:1vw 1vw;
+              background-color:black;}
+      
+        header {background-color:lime;
+                border-radius:1em;
+                width:93vw;
+                height:10vh;
+                line-height:10vh;
+                margin-bottom:1vh;
+                display:inline-block;
+                padding:2vw 0vw 0vw 2vw;
+                }
+        header img {width:8vw;
+                    display:inline-block;}        
+        div {box-sizing:border-box;
+            background-color:powderblue;
+            width:95vw;
+            border:0px solid black;
+            padding:1vw 0vw 1vw;
+            border-radius:1em;
+            display:inline-block;
+            text-align:center;}                      
+        .container {box-sizing:border-box;
+                    list-style-type:none;
+                    display:inline-block;}
+        .container .menu {width:45vw;
+                          height: 35vw;
+                          box-sizing:border-box;
+                          background-color:tomato;
+                          border:0px solid black;
+                          border-radius:1em;
+                          margin: 0.5vw;
+                          padding:1vw;
+                          font-size:1em;}
+        .container .link {box-sizing:border-box;
+                          margin-top:1em;
+                          margin-bottom:0.5em;
+                          width:92vw;
+                          height:20vh;
+                          background-color:white;}                                     
+        footer {box-sizing: border-box;
+                background-color:silver;
+                border:0px solid black;
+                width:95vw; height:10vh;
+                margin: 1vh 0vw 0vh;
+                text-align: center;
+                border-radius:1em;
+                }        
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <a href="home220914.html"><img src="images/dog.png" alt="dog"> </a>
+    </header>
+    <div class="container">
+            <a target="main" href="jabascript.html"><div class="menu">Javascript</div></a>
+            <a href="style.html" target="main"><div class="menu">UI&UX</div></a>
+            <a href="#" target="main"><div class="menu">LOG-IN</div></a>
+            <a href="gallery.html" target="main"><div class="menu">GALLERY</div></a>
+        <div class="link">HELLO</div>
+    </div>       
+    <footer>
+        <br>
+        <address>last updated 2022.09.15.</address>
+        <br>
+        MADE BY HANBIN // powered by github
+    </footer>   
+</body>
+</html>
