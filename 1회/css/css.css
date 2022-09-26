@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body {background: #ffffff;
+      color:#333333}
+#container {width:1200px;
+            display:block;}
+header {background:silver;
+        width:1200px;
+        height:100px;}
+#imgslide {background:tomato;
+           width:1200px; height:300px;}
+#contents {background: skyblue;
+        width:1200px; height:200px;}
+footer {background: black;
+        width:1200px; height:100px;}
