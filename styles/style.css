@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*전체 스타일*/
+* {font-family:"맑은 고딕";
+   margin: 0 auto;
+   padding: 0;
+   box-sizing:border-box; 
+  }
+ul {list-style:none;}
+a  {text-decoration:none;
+    display:block;
+    color:inherit;} /*기존 문자색 지정*/
+body {width:100%;
+      background: #ffffff;
+      color:#333333;}
+.clear {clear:both;}      
+/*레이아웃*/      
+#container {width:1200px;
+            display:block;}
+/*헤더*/            
+header {height:100px;;}
+.logo {float:left; /* 로고 위치 */
+       width:200px; /* 가로 길이 */
+       height:100px; /* 세로 높이 */
+       }
+.logo img {margin-top:30px; /*로고 상단 여백*/
+           width:200px; /* 로고 가로 길이 */
+           height:40px;} /*로고 세로 길이 */
+.navi {float:right; /*주메뉴 위치*/
+       width:800px; /*주메뉴 넓이*/
+       margin-top:30px;} /*주메뉴 상단과의 여백*/
+.navi li {float:left; /*주메뉴 위치 지정 */
+          width:200px; /*주메뉴 각 메뉴 넓이*/
+          text-align:center; /*텍스트 중앙 정렬 */
+          position: relative; /*서브메뉴 자리 지정 */
+       }
+.navi li a {padding:10px;} /*주메뉴 주변 여백 */
+.navi > li {transition:all 0.4s;} /* 서브 리스트 */          
+.navi>li:hover {background:#524fa1; /*서브메뉴 마우스오버 배경색 */
+                color:#fff;} /*마우스 오버 글자색 */
+.submenu {background:rgba(255, 255, 255, 0.5);/*서브메뉴 배경색깔 */
+      position: absolute; /*위치 고정*/
+      z-index:10; /*위에 올려두기*/
+      width:100%; /* 기존 넓이 고정 */
+      display:none; /*숨겨둠*/
+}
+.submenu>li {color:#333333; /*메뉴 글자색*/
+         transition:all 0.4s;} /*트랜지션 설정 */
+.submenu>li:hover {background:#524fa1; /*마우스오버 색깔*/
+               color:white;
+               }                                              
+/*이미지슬라이드 (3장의 이미지가 슬라이드로 교차 표시) */        
+#imgslide {background:black; /*이미지 전환시 배경색 표현 */
+           width:1200px;
+           height:300px;
+           overflow:hidden; /*내용 초과된 이미지 2장을 숨김 */
+           position:relative; /*이미지 표시 기준 지정 */
+       }
+#imgslide > a {position:absolute; /* #imgslide relative에 위치 지정 */  
+             left:0;
+             top:0;
+             transition: all 3s;
+          overflow:hidden; /* 이미지 전환에 따른 구성 적용 */ 
+       }
+#imgslide > img {width:100%; /*기존 img 크기에 맞춤 */
+       }
+.text {width:500px;
+       height:50px;
+       background:rgba(0, 0, 0, 0.5);
+       position:absolute;
+       text-align:center;
+       color:#fff;
+       font-weight:bold;
+       line-height:50px;
+       left:30%; /*가운데 정렬 1200 중앙. 약 350px */
+       top:35%; /*가운데 정렬 300 중앙 약 125px */
+}                        
+/*콘텐츠*/           
+#contents {background: red;
+        height:200px;}
+#contents > div {width:390px;
+                height:180px;
+                margin:10px 5px 10px 5px;
+                float:left;}        
+.note {background:green;}
+.banner {background:gold;}
+.link {background:green;}        
+/*레이어팝업*/
+
+/*푸터*/
+footer {height:100px;}
+footer > div {height:100px;
+              float:left;}    
+.logo {
+       width:200px;}
+.copy {background:skyblue;
+       width:800px;}
+.sns {background:gold;
+         width:200px;}
+
