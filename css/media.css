@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.parta {overflow: hidden;}
+.part img {transition:all 0.5s;}
+.part img:hover {transform:scale(1.1);}
+s
+.part1d h2:hover, .title {color:white;}
+         
+
+/*~1240px 인덱스 웹디자인*/
+@media (max-width:1240px) {
+    body {
+          padding:0px;
+          width:100%;}
+    #all {width:100%;}      
+    header, footer {width:100%;
+                    padding:5px;
+                    background:none;}
+    #head, #foot {width:100%;
+                  background:black;
+                  color:white;}
+    .logo {width:20%;}
+    nav {float:right;
+         width:80%;
+         margin-top:30px;}
+    .main li {width:20%;}
+    .main li:hover {background:none;}              
+    #cont {width:100%;}
+
+    /* ~1240px 갤러리 */
+    #body {display:100%;}
+    #cont {width:100%;}
+    #il div, #photo div {margin:10px;}
+   #photo img {width:80%;
+            transition:all 0.5s;}
+  #photo img:hover {transform: scale(1.2);
+                    background:white;
+                    border:5px solid white;
+                    padding:5px;}              
+}
+
+
+/*~768px 인덱스 웹디자인*/
+@media (max-width:768px){
+.logo {background:black;
+       color:white;
+       width:100%;
+       clear:both;
+       font-size:3rem;}
+nav {clear:both;
+      margin-top:0;
+      width:100%;
+      height:100%;}
+.sun {height:10px;
+      display:block;
+      border:1px solid black;
+      background-color:black;}             
+.main li {width:33%;
+          margin:0;
+          text-align:center;}
+.main li:hover {letter-spacing:0;
+                background:none;}
+#all {width:100%;}          
+.part1a, .part1b, .part1c, .part1d
+        {clear:both;
+        width:100%;
+        margin-bottom:10px;}
+.part1d {margin-bottom:15%;
+         text-align:center;
+         font-size:1rem;}
+#webfade {width:100%;}
+#slide {display:none;}        
+
+footer {height:200px;
+       color:white;}
+.f1 {width:100%;}
+.f2 {width:100%;}
+.f2 li {margin-left:0%;}
+/*~768 페이드인 슬라이드*/
+#spfade img {display:block;}
+#spfade {display:block;
+         width:100%;}
+
+
+/*~768px 갤러리*/
+.gall li:hover {letter-spacing:0;}
+#photo div {width:45%;}
+.sun {display:block;}
+}
+/*~480px 인덱스 웹디자인*/
+@media (max-width:480px) {
+    header, #head {width:100%;
+                   background:none;
+                   color:white;}
+    footer, #foot {width:100%;
+            height:200px;
+            background:none;
+            }
+    body #all, #cont, .hoko
+    {width:100%;}
+    .slide, .icon {display:none;}        
+    .logo {clear:both;
+           width:100%;
+           line-height:80px;}        
+    nav {clear:both;
+         margin-top:2%;   
+         width:100%;
+         font-size:1rem;
+         float:left;
+         background:white;}
+    .main {width:100%;}     
+    
+    #webfade img {width:100%;
+                  display:inline-block;
+                  text-align:center;}
+    footer {background:skyblue;}              
+    .f1 {width:100%;}
+    .f2 {float:left;
+         margin-top:50px;
+         width:100%;}
+    .f2 li {margin-left:20px;
+            display:inline-block;}
+    .f2 img {width:100%;
+             padding-left:10px;}        
+
+
+/*갤러리 모바일*/
+.main {padding:15px;}
+.main li {margin-left:0;}
+.main li:hover {color:black;}
+.gall li {font-size:1rem;
+          margin-left:0px;
+          background:none;}
+#photo {width:100%;
+        padding:0 10%;}
+#photo div {width:100%;
+            margin:0;
+            padding:0;}
+#photo img:hover {transform:scale(2);
+              border:5px solid white;
+              background:white;
+              padding:5px;
+              }                
+}
+
+
