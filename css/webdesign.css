@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.parta {overflow: hidden;}
+.part img {transition:all 0.5s;
+           }  
+.part img:hover {transform:scale(1.1);}
