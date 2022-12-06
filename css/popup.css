@@ -65,11 +65,26 @@ button:hover {color:white;}
          width:100%;
          height:100%;
          background:rgba(0, 0, 0, 0.9);
-         display:none;}
+         display:none;}         
 .bob, .ai500 {position:absolute;
         top:10%;
         left:36%;
         border:10px solid white;
         background:white;}
+.bob2 {position:absolute;
+       top:10%;
+       left:25%;}        
 .bob img, .ai500 img {width:450px;}
-.bob2 img {width:1000px;}             
+.bob2 img {width:1000px;}   
+
+/*웹프로젝트 팝업*/
+.aipro  {position:absolute;
+         top:5%;
+         left:16%;
+         border:10px solid white;
+         background:white;}
+.aipro2  {position:absolute;
+         top:2%;
+         left:35%;
+         border:10px solid white;
+         background:white;}
