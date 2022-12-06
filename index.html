@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script src="js/jquery-1.12.3.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>김한빈 웹페이지 포트폴리오</title>
 </head>
 <body>
-        <header>
+        <header data-aos="fade" data-aos-duration="2000">
             <div id="head">
                 <div class="logo" id="top"><a href="index.html">KIM HANBIN</a></div>
                 <nav>
@@ -28,14 +30,14 @@
 <div id="all">
     <!-- 본문 내용 시작 -->    
         <div id="cont">
-            <div id="slide">
+            <div id="slide" data-aos="fade-up">
                     <div class="hoko">
                         <!-- <li class="right"><a href="#">◀</a> </li> -->
                             <ul class="slide">
-                                <li><a href="gall.html"><img src="img/slide/slide1.jpg" alt="slide"></a></li>
-                                <li><a href="gall.html"><img src="img/slide/slide2.jpg" alt="slide"></a></li>
-                                <li><a href="webposter.html"><img src="img/slide/slide3.jpg" alt="slide"></a></li>
-                                <li><a href="web/jinju/index.html"><img src="img/slide/slide4.jpg" alt="slide"></a></li>
+                                <li><a href="webgall.html"><img src="img/slide/slide1.png" alt="slide"></a></li>
+                                <li><a href="webgall.html"><img src="img/slide/slide2.png" alt="slide"></a></li>
+                                <li><a href="webposter.html"><img src="img/slide/slide3.png" alt="slide"></a></li>
+                                <li><a href="web/jinju/index.html"><img src="img/slide/slide4.png" alt="slide"></a></li>
                                 <li><a href="webdesign.html"><img src="img/slide/slide5.png" alt="slide"></a></li>
                             </ul>
                     </div>
@@ -50,7 +52,7 @@
             </div>
             <article>
                     <div class="part">
-                        <div class="part1a">
+                        <div class="part1a" data-aos="fade-right" data-aos-delay:"0" data-aos-anchor-placement="top-center" data-aos-once="false">
                             <span class="indexshow2">
                                 <p>Hi! I'm KIM HANBIN.</p>
                                 <p>Nice to meet you!</p>
@@ -60,14 +62,14 @@
                                 <p>hometown: Jinju</p>
                             </span>    
                         </div>
-                        <div class="part1b">
+                        <div data-aos="fade-left" data-aos-anchor-placement="center-center" data-aos-delay:"500" class="part1b" data-aos-once="false">
                             <br><br>
                             <p><img class="indexshow1" src="img/index/bufs.jpg" alt="bufs"></p>
                             <br><br>
                             <p><img class="indexshow1" src="img/index/jlpt.png" alt="jlpt"></p>
                         </div>
                         <div class="line"></div>
-                        <div class="part1a">
+                        <div class="part1a" data-aos="fade-right" data-aos-delay:"100" data-aos-anchor-placement="top-center" data-aos-once="false" >
                             <p>i can webdesign Publishing!</p>
                             <br>
                             <p style="font-size:3em">HTML:5</p>
@@ -76,19 +78,19 @@
                             <br><br>
                             <p>application UI & UX : design</p> 
                         </div>
-                        <div class="part1b">
+                        <div class="part1b" data-aos="fade-up" data-aos-anchor-placement="center-center">
                             <p><img src="img/index/html.png" alt="html"></p>
                             <p><img src="img/index/hrdk.png" alt="한국산업인력공단"></p>
                             <p><img src="img/index/github.png" alt="github"></p>
                         </div>
                         <div class="line"></div>
-                        <div class="part1a" id="adobe">
+                        <div class="part1a" id="adobe" data-aos="fade-right" data-aos-delay:"200" data-aos-anchor-placement="top-center" data-aos-once="false">
                             <p>i can photoshop & illustrator!</p>
                             <br>
                             <p>Image editing and design.</p>
                             <p>vector Graphics and illustration.</p>
                         </div>
-                        <div class="part1b" id="webfade">
+                        <div class="part1b" id="webfade" data-aos="fade-left" data-aos-delay:"200" data-aos-anchor-placement="center-center" data-aos-once="false">
                             <a href="#">
                                 <img src="img/index/ps.png" alt="photoshop"></a>
                                 <a href="#">
@@ -132,5 +134,8 @@
                 <h3>화면을 클릭하면 공지창이 닫힙니다.</h3>
             </div>
         </div>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
