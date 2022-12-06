@@ -129,8 +129,6 @@ article {padding:10px 50px;
          float:right;
          text-align:left;}
 
-.indexshow2 {display:none;}
-
 /*웹페이드*/
 #webfade {width:50%;
           height:500px;
@@ -153,10 +151,35 @@ article {padding:10px 50px;
 #adobe {text-align:left;}
 
 /*웹*/
-#web {width:100%;}
+#web {width:100%;
+      border:5px solid skyblue;}
 .title {font-size:4rem;
         text-align:left;
         font-weight:bold;}
+
+/*웹프로젝트*/
+#pro_photo {
+        padding:5px 5px 5px 70px;
+        width:100%;
+        justify-content:center;
+         }
+#pro_photo ul {float:left;
+             width:100%;
+             height:100%;}
+#pro_photo li {width:18vw;
+             height:25vh;
+             float:left;
+             padding:10px;
+             margin:1vh;}           
+#pro_photo img {width:17vw;
+              transition:all 0.5s;
+              border:5px solid black;
+              border-radius:20px;}
+#pro_photo img:hover {transform: scale(1.2);
+                    background:white;
+                    border:5px solid white;
+                    padding:5px;}
+  
 
 /*갤러리*/
 #gall {margin:10px;}
@@ -178,24 +201,20 @@ article {padding:10px 50px;
                 letter-spacing:0.5em;}          
 /*일러스트*/          
 #il, #photo {
-      padding:10px 10px 10px 70px;
+      padding:5px 5px 5px 70px;
       width:100%;
-      display:flex;
-      flex-wrap:wrap;
       justify-content:center;
-       } 
-#il div, #photo div {width:33.3%;
-                     margin:10px;
-                     float:left;
-                     flex-wrap:wrap;
-                     flex-grow:1;
-                     flex-shrink:0.5;}
-#photo img {width:80%;
-          display:inline-block;
-          padding-left:20%;
-          padding-top:5%;
-          padding-bottom:auto;
-          transition:all 0.5s;}
+       }
+#photo ul {float:left;
+           width:100%;
+           height:100%;}
+#photo li {width:12vw;
+           height:40vh;
+           float:left;
+           padding:2px;
+           margin:0 1vh 5vh;}           
+#photo img {width:12vw;
+            transition:all 0.5s;}
 #photo img:hover {transform: scale(1.2);
                   background:white;
                   border:5px solid white;
@@ -259,4 +278,3 @@ footer {text-align:center;
 button {text-align:center;
         width:200px;}         
 
- 
