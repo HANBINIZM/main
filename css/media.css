@@ -4,7 +4,7 @@
 .part img {transition:all 0.5s;}
 .part img:hover {transform:scale(1.1);}
 s
-.part1d h2:hover, .title {color:white;}
+.part1d h2:hover {color:white;}
          
 
 /*~1240px 인덱스 웹디자인*/
@@ -18,30 +18,35 @@ s
                     background:none;}
     #head, #foot {width:100%;
                   background:black;
-                  color:white;}
+                  color:#333;}
     .logo {width:20%;}
     nav {float:right;
          width:80%;
          margin-top:30px;}
     .main li {width:20%;}
-    .main li:hover {background:none;}              
+    .main li:hover {background:skyblue;
+                    color:#333;}              
     #cont {width:100%;}
 
     /* ~1240px 갤러리 */
     #body {display:100%;}
     #cont {width:100%;}
     #il div, #photo div {margin:10px;}
-   #photo img {width:80%;
+   #photo li {width:28vw;
+              display:inline-block;} 
+   #photo img {width:20vw;
             transition:all 0.5s;}
   #photo img:hover {transform: scale(1.2);
                     background:white;
                     border:5px solid white;
-                    padding:5px;}              
+                    padding:5px;}
+  .part img {width:90%;}                 
+                    
 }
 
 
 /*~768px 인덱스 웹디자인*/
-@media (max-width:768px){
+@media (max-width:768px){       
 .logo {background:black;
        color:white;
        width:100%;
@@ -59,7 +64,7 @@ nav {clear:both;
           margin:0;
           text-align:center;}
 .main li:hover {letter-spacing:0;
-                background:none;}
+                background:skyblue;}
 #all {width:100%;}          
 .part1a, .part1b, .part1c, .part1d
         {clear:both;
@@ -83,12 +88,17 @@ footer {height:200px;
 
 
 /*~768px 갤러리*/
+#photo ul {width:100%;}
+#photo li {width:30vw;
+           margin:5px;
+           height:35vh;}
+#photo img {width:28vw}           
 .gall li:hover {letter-spacing:0;}
-#photo div {width:45%;}
 .sun {display:block;}
 }
 /*~480px 인덱스 웹디자인*/
 @media (max-width:480px) {
+    * {font-size:5vw;}
     header, #head {width:100%;
                    background:none;
                    color:white;}
@@ -97,7 +107,7 @@ footer {height:200px;
             background:none;
             }
     body #all, #cont, .hoko
-    {width:100%;}
+    {width:90%;}
     .slide, .icon {display:none;}        
     .logo {clear:both;
            width:100%;
@@ -113,15 +123,23 @@ footer {height:200px;
     #webfade img {width:100%;
                   display:inline-block;
                   text-align:center;}
-    footer {background:skyblue;}              
-    .f1 {width:100%;}
+
+    footer {background:skyblue;
+            border-radius:10px;
+            height:100%;
+            color:red;
+            font-size:2px;
+            padding:10px;}              
+    .f1 {width:100%;
+         background:none;}
     .f2 {float:left;
-         margin-top:50px;
-         width:100%;}
-    .f2 li {margin-left:20px;
+         width:100%;
+         height:100px;
+         margin-top:50px;}
+    .f2 li {margin-left:0vw;
             display:inline-block;}
-    .f2 img {width:100%;
-             padding-left:10px;}        
+    .f2 img {width:60%;
+             padding-left:0vw;}        
 
 
 /*갤러리 모바일*/
@@ -133,9 +151,13 @@ footer {height:200px;
           background:none;}
 #photo {width:100%;
         padding:0 10%;}
-#photo div {width:100%;
+#photo li {width:20vh;
+           height:20vh;
             margin:0;
-            padding:0;}
+            padding:0 auto;
+            display:inline-block;
+            line-height:20vh;}
+#photo img {width:15vh;}            
 #photo img:hover {transform:scale(2);
               border:5px solid white;
               background:white;
