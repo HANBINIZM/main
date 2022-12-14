@@ -101,6 +101,13 @@ setInterval(function(){fade();},1000);
 $(".modal").click(function(){
     $(".modal").fadeOut();
 });
+
+$(".pic-1").click(function(){
+    $(".modal-1").fadeIn();
+});
+$(".pic-2").click(function(){
+    $(".modal-2").fadeIn();
+});
 $(".pic0").click(function(){
     $(".modal0").fadeIn();
 });
